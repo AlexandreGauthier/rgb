@@ -1,0 +1,21 @@
+Circuit: * D:\Documents\rgb\ltspice\sim.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Dec 21 22:54:58 2020
+Total elapsed time: 11.013 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 1006306
+traniter = 1006289
+tranpoints = 501525
+accept = 501021
+rejected = 504
+matrix size = 57
+fillins = 26
+solver = Normal
+Matrix Compiler1: 4.16 KB object code size  0.6/0.4/[0.3]
+Matrix Compiler2: 4.72 KB object code size  0.3/0.5/[0.2]
+

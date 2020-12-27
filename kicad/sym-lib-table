@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ATTINY404-SSNR)(type Legacy)(uri ${KIPRJMOD}/libraries/ATTINY404-SSNR.lib)(options "")(descr ""))
+  (lib (name mosfet)(type Legacy)(uri ${KIPRJMOD}/libraries/mosfet.lib)(options "")(descr ""))
 )

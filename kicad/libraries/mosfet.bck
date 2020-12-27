@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DMG9926USD
+D 2 N-CH 20v 8A
+F https://www.diodes.com/assets/Datasheets/ds31757.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -16,100 +16,23 @@ $EndDescr
 $Comp
 L ATTINY404-SSNR:ATTINY404-SSNR U1
 U 1 1 5FE13C65
-P 2090 3650
-F 0 "U1" H 3290 4137 60  0000 C CNN
-F 1 "ATTINY404-SSNR" H 3290 4031 60  0000 C CNN
-F 2 "rgb_footprints:ATTINY404-SSNR" H 3290 3990 60  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny204-404-DataSheet-DS50002687B.pdf" H 3290 4031 60  0001 C CNN
-	1    2090 3650
+P 7090 2050
+F 0 "U1" H 8290 2537 60  0000 C CNN
+F 1 "ATTINY404-SSNR" H 8290 2431 60  0000 C CNN
+F 2 "rgb_footprints:ATTINY404-SSNR" H 8290 2390 60  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny204-404-DataSheet-DS50002687B.pdf" H 8290 2431 60  0001 C CNN
+	1    7090 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L mosfet:DMG9926USD Q1
 U 1 1 5FE90B41
-P 6100 850
-F 0 "Q1" H 6240 896 50  0000 L CNN
-F 1 "DMG9926USD" H 6240 805 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6000 350 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 1010 50  0001 C CNN
-	1    6100 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L mosfet:DMG9926USD Q1
-U 2 1 5FE91CF3
-P 6100 1350
-F 0 "Q1" H 6240 1396 50  0000 L CNN
-F 1 "DMG9926USD" H 6240 1305 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6000 850 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 1510 50  0001 C CNN
-	2    6100 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L mosfet:DMG9926USD Q2
-U 1 1 5FE99194
-P 6100 1850
-F 0 "Q2" H 6240 1896 50  0000 L CNN
-F 1 "DMG9926USD" H 6240 1805 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6000 1350 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 2010 50  0001 C CNN
-	1    6100 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L mosfet:DMG9926USD Q2
-U 2 1 5FE9919A
-P 6100 2350
-F 0 "Q2" H 6240 2396 50  0000 L CNN
-F 1 "DMG9926USD" H 6240 2305 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6000 1850 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 2510 50  0001 C CNN
-	2    6100 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L mosfet:DMG9926USD Q3
-U 1 1 5FE9AB06
-P 7400 850
-F 0 "Q3" H 7540 896 50  0000 L CNN
-F 1 "DMG9926USD" H 7540 805 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7300 350 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6825 1010 50  0001 C CNN
-	1    7400 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L mosfet:DMG9926USD Q3
-U 2 1 5FE9AB0C
-P 7400 1350
-F 0 "Q3" H 7540 1396 50  0000 L CNN
-F 1 "DMG9926USD" H 7540 1305 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7300 850 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6825 1510 50  0001 C CNN
-	2    7400 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L mosfet:DMG9926USD Q4
-U 1 1 5FEA036A
-P 7400 1850
-F 0 "Q4" H 7540 1896 50  0000 L CNN
-F 1 "DMG9926USD" H 7540 1805 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7300 1350 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6825 2010 50  0001 C CNN
-	1    7400 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L mosfet:DMG9926USD Q4
-U 2 1 5FEA0370
-P 7400 2350
-F 0 "Q4" H 7540 2396 50  0000 L CNN
-F 1 "DMG9926USD" H 7540 2305 50  0000 L CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7300 1850 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6825 2510 50  0001 C CNN
-	2    7400 2350
+P 1200 3350
+F 0 "Q1" H 1340 3396 50  0000 L CNN
+F 1 "DMG9926USD" H 1340 3305 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 1100 2850 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 625 3510 50  0001 C CNN
+	1    1200 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -356,4 +279,275 @@ Wire Wire Line
 Connection ~ 1250 1450
 Wire Wire Line
 	1250 1450 1350 1450
+Wire Wire Line
+	1250 3150 1250 3000
+Wire Wire Line
+	1250 3000 1700 3000
+Text Label 1700 3000 2    50   ~ 0
+DRAIN_1
+$Comp
+L power:GND #PWR?
+U 1 1 5FE9DAE6
+P 1250 3600
+F 0 "#PWR?" H 1250 3350 50  0001 C CNN
+F 1 "GND" H 1255 3427 50  0000 C CNN
+F 2 "" H 1250 3600 50  0001 C CNN
+F 3 "" H 1250 3600 50  0001 C CNN
+	1    1250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3550 1250 3600
+Text Label 700  3350 0    50   ~ 0
+PWM_1
+Wire Wire Line
+	700  3350 950  3350
+$Comp
+L mosfet:DMG9926USD Q1
+U 2 1 5FEA7092
+P 1200 4250
+F 0 "Q1" H 1340 4296 50  0000 L CNN
+F 1 "DMG9926USD" H 1340 4205 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 1100 3750 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 625 4410 50  0001 C CNN
+	2    1200 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4050 1250 3900
+Wire Wire Line
+	1250 3900 1700 3900
+Text Label 1700 3900 2    50   ~ 0
+DRAIN_2
+$Comp
+L power:GND #PWR?
+U 1 1 5FEA709B
+P 1250 4500
+F 0 "#PWR?" H 1250 4250 50  0001 C CNN
+F 1 "GND" H 1255 4327 50  0000 C CNN
+F 2 "" H 1250 4500 50  0001 C CNN
+F 3 "" H 1250 4500 50  0001 C CNN
+	1    1250 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4450 1250 4500
+Text Label 700  4250 0    50   ~ 0
+PWM_2
+Wire Wire Line
+	700  4250 950  4250
+$Comp
+L mosfet:DMG9926USD Q2
+U 1 1 5FEAD244
+P 2400 3350
+F 0 "Q2" H 2540 3396 50  0000 L CNN
+F 1 "DMG9926USD" H 2540 3305 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 2300 2850 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 1825 3510 50  0001 C CNN
+	1    2400 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3150 2450 3000
+Wire Wire Line
+	2450 3000 2800 3000
+Text Label 2800 3000 2    50   ~ 0
+DRAIN_3
+$Comp
+L power:GND #PWR?
+U 1 1 5FEAD24D
+P 2450 3600
+F 0 "#PWR?" H 2450 3350 50  0001 C CNN
+F 1 "GND" H 2455 3427 50  0000 C CNN
+F 2 "" H 2450 3600 50  0001 C CNN
+F 3 "" H 2450 3600 50  0001 C CNN
+	1    2450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3550 2450 3600
+Text Label 1900 3350 0    50   ~ 0
+PWM_3
+Wire Wire Line
+	1900 3350 2150 3350
+$Comp
+L mosfet:DMG9926USD Q3
+U 2 1 5FEAD256
+P 2400 4250
+F 0 "Q3" H 2540 4296 50  0000 L CNN
+F 1 "DMG9926USD" H 2540 4205 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 2300 3750 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 1825 4410 50  0001 C CNN
+	2    2400 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4050 2450 3900
+Wire Wire Line
+	2450 3900 2800 3900
+Text Label 2800 3900 2    50   ~ 0
+DRAIN_4
+$Comp
+L power:GND #PWR?
+U 1 1 5FEAD25F
+P 2450 4500
+F 0 "#PWR?" H 2450 4250 50  0001 C CNN
+F 1 "GND" H 2455 4327 50  0000 C CNN
+F 2 "" H 2450 4500 50  0001 C CNN
+F 3 "" H 2450 4500 50  0001 C CNN
+	1    2450 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4450 2450 4500
+Text Label 1900 4250 0    50   ~ 0
+PWM_4
+Wire Wire Line
+	1900 4250 2150 4250
+$Comp
+L mosfet:DMG9926USD Q3
+U 1 1 5FEB1BE4
+P 3600 3350
+F 0 "Q3" H 3740 3396 50  0000 L CNN
+F 1 "DMG9926USD" H 3740 3305 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3500 2850 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 3025 3510 50  0001 C CNN
+	1    3600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3150 3650 3000
+Wire Wire Line
+	3650 3000 4000 3000
+Text Label 4000 3000 2    50   ~ 0
+DRAIN_5
+$Comp
+L power:GND #PWR?
+U 1 1 5FEB1BED
+P 3650 3600
+F 0 "#PWR?" H 3650 3350 50  0001 C CNN
+F 1 "GND" H 3655 3427 50  0000 C CNN
+F 2 "" H 3650 3600 50  0001 C CNN
+F 3 "" H 3650 3600 50  0001 C CNN
+	1    3650 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3550 3650 3600
+Text Label 3100 3350 0    50   ~ 0
+PWM_5
+Wire Wire Line
+	3100 3350 3350 3350
+$Comp
+L mosfet:DMG9926USD Q3
+U 2 1 5FEB1BF6
+P 3600 4250
+F 0 "Q3" H 3740 4296 50  0000 L CNN
+F 1 "DMG9926USD" H 3740 4205 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3500 3750 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 3025 4410 50  0001 C CNN
+	2    3600 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4050 3650 3900
+Wire Wire Line
+	3650 3900 4000 3900
+Text Label 4000 3900 2    50   ~ 0
+DRAIN_6
+$Comp
+L power:GND #PWR?
+U 1 1 5FEB1BFF
+P 3650 4500
+F 0 "#PWR?" H 3650 4250 50  0001 C CNN
+F 1 "GND" H 3655 4327 50  0000 C CNN
+F 2 "" H 3650 4500 50  0001 C CNN
+F 3 "" H 3650 4500 50  0001 C CNN
+	1    3650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4450 3650 4500
+Text Label 3100 4250 0    50   ~ 0
+PWM_6
+Wire Wire Line
+	3100 4250 3350 4250
+$Comp
+L mosfet:DMG9926USD Q4
+U 1 1 5FEC8536
+P 4800 3350
+F 0 "Q4" H 4940 3396 50  0000 L CNN
+F 1 "DMG9926USD" H 4940 3305 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4700 2850 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 4225 3510 50  0001 C CNN
+	1    4800 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3150 4850 3000
+Wire Wire Line
+	4850 3000 5200 3000
+Text Label 5200 3000 2    50   ~ 0
+DRAIN_7
+$Comp
+L power:GND #PWR?
+U 1 1 5FEC853F
+P 4850 3600
+F 0 "#PWR?" H 4850 3350 50  0001 C CNN
+F 1 "GND" H 4855 3427 50  0000 C CNN
+F 2 "" H 4850 3600 50  0001 C CNN
+F 3 "" H 4850 3600 50  0001 C CNN
+	1    4850 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3550 4850 3600
+Text Label 4300 3350 0    50   ~ 0
+PWM_7
+Wire Wire Line
+	4300 3350 4550 3350
+$Comp
+L mosfet:DMG9926USD Q4
+U 2 1 5FEC8548
+P 4800 4250
+F 0 "Q4" H 4940 4296 50  0000 L CNN
+F 1 "DMG9926USD" H 4940 4205 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4700 3750 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 4225 4410 50  0001 C CNN
+	2    4800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4050 4850 3900
+Wire Wire Line
+	4850 3900 5200 3900
+Text Label 5200 3900 2    50   ~ 0
+DRAIN_8
+$Comp
+L power:GND #PWR?
+U 1 1 5FEC8551
+P 4850 4500
+F 0 "#PWR?" H 4850 4250 50  0001 C CNN
+F 1 "GND" H 4855 4327 50  0000 C CNN
+F 2 "" H 4850 4500 50  0001 C CNN
+F 3 "" H 4850 4500 50  0001 C CNN
+	1    4850 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4450 4850 4500
+Text Label 4300 4250 0    50   ~ 0
+PWM_8
+Wire Wire Line
+	4300 4250 4550 4250
+Wire Notes Line
+	5500 2800 5500 4850
+Wire Notes Line
+	5500 4850 600  4850
+Wire Notes Line
+	600  4850 600  2800
+Wire Notes Line
+	600  2800 5500 2800
+Text Notes 600  2800 0    50   ~ 0
+Driver Mosfets
 $EndSCHEMATC

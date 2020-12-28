@@ -2,4 +2,6 @@
   (lib (name ATTINY404-SSNR)(type Legacy)(uri ${KIPRJMOD}/libraries/ATTINY404-SSNR.lib)(options "")(descr ""))
   (lib (name mosfet)(type Legacy)(uri ${KIPRJMOD}/libraries/mosfet.lib)(options "")(descr ""))
   (lib (name AP63205WU)(type Legacy)(uri ${KIPRJMOD}/libraries/AP63205WU.lib)(options "")(descr ""))
+  (lib (name atmega808-xu)(type Legacy)(uri ${KIPRJMOD}/libraries/atmega808-xu.lib)(options "")(descr ""))
+  (lib (name ATTINY214)(type Legacy)(uri ${KIPRJMOD}/libraries/ATTINY214.lib)(options "")(descr ""))
 )

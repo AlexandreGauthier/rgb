@@ -260,13 +260,13 @@ Wire Wire Line
 	7475 3800 7475 3750
 $Comp
 L mosfet:DMG9926USD Q4
-U 1 1 602258A6
+U 2 1 602258A6
 P 7425 4000
 F 0 "Q4" H 7550 4000 50  0000 L CNN
 F 1 "DMG9926USD" H 7565 3955 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7325 3500 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6850 4160 50  0001 C CNN
-	1    7425 4000
+	2    7425 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -290,13 +290,13 @@ Wire Wire Line
 	7475 2900 7475 2850
 $Comp
 L mosfet:DMG9926USD Q3
-U 1 1 60225894
+U 2 1 60225894
 P 7425 3100
 F 0 "Q3" H 7550 3100 50  0000 L CNN
 F 1 "DMG9926USD" H 7565 3055 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7325 2600 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6850 3260 50  0001 C CNN
-	1    7425 3100
+	2    7425 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -324,13 +324,13 @@ Wire Wire Line
 	7475 1975 7475 1925
 $Comp
 L mosfet:DMG9926USD Q2
-U 2 1 60225882
+U 1 1 60225882
 P 7425 2175
 F 0 "Q2" H 7550 2175 50  0000 L CNN
 F 1 "DMG9926USD" H 7565 2130 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7325 1675 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6850 2335 50  0001 C CNN
-	2    7425 2175
+	1    7425 2175
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -352,13 +352,13 @@ Wire Wire Line
 	7475 1050 7475 1000
 $Comp
 L mosfet:DMG9926USD Q1
-U 2 1 60225873
+U 1 1 60225873
 P 7425 1250
 F 0 "Q1" H 7550 1250 50  0000 L CNN
 F 1 "DMG9926USD" H 7565 1205 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7325 750 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6850 1410 50  0001 C CNN
-	2    7425 1250
+	1    7425 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -545,13 +545,13 @@ Wire Wire Line
 	6150 3800 6150 3750
 $Comp
 L mosfet:DMG9926USD Q4
-U 2 1 5FEAD256
+U 1 1 5FEAD256
 P 6100 4000
 F 0 "Q4" H 6225 4000 50  0000 L CNN
 F 1 "DMG9926USD" H 6240 3955 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 6000 3500 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 4160 50  0001 C CNN
-	2    6100 4000
+	1    6100 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -579,13 +579,13 @@ Wire Wire Line
 	6150 2900 6150 2850
 $Comp
 L mosfet:DMG9926USD Q3
-U 2 1 5FEAD244
+U 1 1 5FEAD244
 P 6100 3100
 F 0 "Q3" H 6225 3100 50  0000 L CNN
 F 1 "DMG9926USD" H 6240 3055 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 6000 2600 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 3260 50  0001 C CNN
-	2    6100 3100
+	1    6100 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -613,13 +613,13 @@ Wire Wire Line
 	6150 1975 6150 1925
 $Comp
 L mosfet:DMG9926USD Q2
-U 1 1 5FEA7092
+U 2 1 5FEA7092
 P 6100 2175
 F 0 "Q2" H 6225 2175 50  0000 L CNN
 F 1 "DMG9926USD" H 6240 2130 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 6000 1675 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 2335 50  0001 C CNN
-	1    6100 2175
+	2    6100 2175
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -645,13 +645,13 @@ Wire Notes Line
 	550  2150 550  3750
 $Comp
 L mosfet:DMG9926USD Q1
-U 1 1 5FE90B41
+U 2 1 5FE90B41
 P 6100 1250
 F 0 "Q1" H 6225 1250 50  0000 L CNN
 F 1 "DMG9926USD" H 6240 1205 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 6000 750 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 1410 50  0001 C CNN
-	1    6100 1250
+	2    6100 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -904,7 +904,7 @@ F 1 "SW_Push" H 1675 3044 50  0001 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 1675 3050 50  0001 C CNN
 F 3 "~" H 1675 3050 50  0001 C CNN
 	1    1675 2850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2625 6300 3150 6300

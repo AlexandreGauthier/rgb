@@ -260,19 +260,17 @@ Wire Wire Line
 	7475 3800 7475 3750
 $Comp
 L mosfet:DMG9926USD Q4
-U 2 1 602258A6
+U 1 1 602258A6
 P 7425 4000
 F 0 "Q4" H 7550 4000 50  0000 L CNN
 F 1 "DMG9926USD" H 7565 3955 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7325 3500 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6850 4160 50  0001 C CNN
-	2    7425 4000
+	1    7425 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6925 3100 7175 3100
-Text Label 6925 3100 0    50   ~ 0
-PWM_6
 Wire Wire Line
 	7475 3300 7475 3350
 $Comp
@@ -286,21 +284,19 @@ F 3 "" H 7475 3350 50  0001 C CNN
 	1    7475 3350
 	1    0    0    -1  
 $EndComp
-Text Label 7925 2850 2    50   ~ 0
-DRAIN_6
 Wire Wire Line
 	7475 2850 7925 2850
 Wire Wire Line
 	7475 2900 7475 2850
 $Comp
 L mosfet:DMG9926USD Q3
-U 2 1 60225894
+U 1 1 60225894
 P 7425 3100
 F 0 "Q3" H 7550 3100 50  0000 L CNN
 F 1 "DMG9926USD" H 7565 3055 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7325 2600 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6850 3260 50  0001 C CNN
-	2    7425 3100
+	1    7425 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -549,13 +545,13 @@ Wire Wire Line
 	6150 3800 6150 3750
 $Comp
 L mosfet:DMG9926USD Q4
-U 1 1 5FEAD256
+U 2 1 5FEAD256
 P 6100 4000
 F 0 "Q4" H 6225 4000 50  0000 L CNN
 F 1 "DMG9926USD" H 6240 3955 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 6000 3500 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 4160 50  0001 C CNN
-	1    6100 4000
+	2    6100 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -583,13 +579,13 @@ Wire Wire Line
 	6150 2900 6150 2850
 $Comp
 L mosfet:DMG9926USD Q3
-U 1 1 5FEAD244
+U 2 1 5FEAD244
 P 6100 3100
 F 0 "Q3" H 6225 3100 50  0000 L CNN
 F 1 "DMG9926USD" H 6240 3055 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 6000 2600 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 3260 50  0001 C CNN
-	1    6100 3100
+	2    6100 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1105,4 +1101,8 @@ Wire Wire Line
 	1600 1050 2700 1050
 Wire Wire Line
 	1375 1050 1600 1050
+Text Label 6925 3100 0    50   ~ 0
+PWM_6
+Text Label 7925 2850 2    50   ~ 0
+DRAIN_6
 $EndSCHEMATC

@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	4400 1675 4400 1850
 $Comp
 L power:+5V #PWR0106
 U 1 1 5FED5853
@@ -45,834 +43,183 @@ Wire Notes Line
 	550  2100 5350 2100
 Wire Notes Line
 	550  550  5350 550 
-Text Notes 575  650  0    59   ~ 0
-Protection / Connectors\n
 Wire Notes Line
 	550  550  550  2100
-Text Notes 3975 1800 0    39   Italic 0
-Programming
-Text Notes 4650 1900 0    39   Italic 0
-TWI Slave
-Wire Wire Line
-	5025 1775 5025 1825
-Wire Wire Line
-	4950 1775 5025 1775
-$Comp
-L power:GND #PWR0127
-U 1 1 60797CEA
-P 5025 1825
-F 0 "#PWR0127" H 5025 1575 50  0001 C CNN
-F 1 "GND" H 5030 1652 50  0000 C CNN
-F 2 "" H 5025 1825 50  0001 C CNN
-F 3 "" H 5025 1825 50  0001 C CNN
-	1    5025 1825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5025 1475 4950 1475
-Wire Wire Line
-	5025 1425 5025 1475
-$Comp
-L power:+5V #PWR0126
-U 1 1 60791FB5
-P 5025 1425
-F 0 "#PWR0126" H 5025 1275 50  0001 C CNN
-F 1 "+5V" H 5040 1598 50  0000 C CNN
-F 2 "" H 5025 1425 50  0001 C CNN
-F 3 "" H 5025 1425 50  0001 C CNN
-	1    5025 1425
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 1575 4325 1575
-Text Label 4650 1575 2    50   ~ 0
-RESET
-Wire Wire Line
-	4400 1475 4325 1475
-Wire Wire Line
-	4400 1425 4400 1475
-$Comp
-L power:+5V #PWR0125
-U 1 1 607198B6
-P 4400 1425
-F 0 "#PWR0125" H 4400 1275 50  0001 C CNN
-F 1 "+5V" H 4415 1598 50  0000 C CNN
-F 2 "" H 4400 1425 50  0001 C CNN
-F 3 "" H 4400 1425 50  0001 C CNN
-	1    4400 1425
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4325 1675 4400 1675
-$Comp
-L power:GND #PWR0124
-U 1 1 60706B34
-P 4400 1850
-F 0 "#PWR0124" H 4400 1600 50  0001 C CNN
-F 1 "GND" H 4405 1677 50  0000 C CNN
-F 2 "" H 4400 1850 50  0001 C CNN
-F 3 "" H 4400 1850 50  0001 C CNN
-	1    4400 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J4
-U 1 1 606F9F77
-P 4125 1575
-F 0 "J4" H 4125 1375 50  0000 C CNN
-F 1 "Conn_01x04" H 4043 1241 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4125 1575 50  0001 C CNN
-F 3 "~" H 4125 1575 50  0001 C CNN
-	1    4125 1575
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J5
-U 1 1 60571EC0
-P 4750 1675
-F 0 "J5" H 4700 1375 50  0000 L CNN
-F 1 "Conn_01x02" H 4830 1576 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4750 1675 50  0001 C CNN
-F 3 "~" H 4750 1675 50  0001 C CNN
-	1    4750 1675
-	-1   0    0    1   
-$EndComp
-Text Label 5275 1675 2    50   ~ 0
-TWI_SCL
-Wire Wire Line
-	5275 1675 4950 1675
-Wire Wire Line
-	4950 1575 5275 1575
-Text Label 5275 1575 2    50   ~ 0
-TWI_SDA
-Text Notes 3500 1775 0    39   Italic 0
-Channel 2\n
-Text Notes 650  1250 0    39   Italic 0
-Power
-Text Label 2425 1450 0    50   ~ 0
-DRAIN_2
-Wire Wire Line
-	2750 1450 2425 1450
-Wire Wire Line
-	2425 1350 2750 1350
-Text Label 2425 1650 0    50   ~ 0
-DRAIN_4
-Wire Wire Line
-	2750 1650 2425 1650
-Wire Wire Line
-	2425 1550 2750 1550
-Text Label 2425 1550 0    50   ~ 0
-DRAIN_3
-$Comp
-L Connector_Generic:Conn_01x05 J3
-U 1 1 606245EA
-P 3725 1450
-F 0 "J3" H 3675 1750 50  0000 L CNN
-F 1 "Conn_01x05" H 3643 1116 50  0001 C CNN
-F 2 "rgb_footprints:CUI_TB003-500-P05BE" H 3725 1450 50  0001 C CNN
-F 3 "~" H 3725 1450 50  0001 C CNN
-	1    3725 1450
-	1    0    0    -1  
-$EndComp
-Text Label 3175 1450 0    50   ~ 0
-DRAIN_6
-Text Label 3175 1350 0    50   ~ 0
-DRAIN_5
-Text Label 3175 1650 0    50   ~ 0
-DRAIN_8
-Text Label 3175 1550 0    50   ~ 0
-DRAIN_7
-$Comp
-L power:+12V #PWR0123
-U 1 1 606245F0
-P 3900 1050
-F 0 "#PWR0123" H 3900 900 50  0001 C CNN
-F 1 "+12V" V 3915 1178 50  0000 L CNN
-F 2 "" H 3900 1050 50  0001 C CNN
-F 3 "" H 3900 1050 50  0001 C CNN
-	1    3900 1050
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 6058024D
-P 750 1050
-F 0 "J1" H 750 1150 50  0000 C CNN
-F 1 "1935776" H 668 816 50  0001 C CNN
-F 2 "rgb_footprints:barrel jack" H 750 1050 50  0001 C CNN
-F 3 "https://www.phoenixcontact.com/pxc-oc-itemdetail-pdf-web/eshop?lineItemType=LineItem&UID=1935776" H 750 1050 50  0001 C CNN
-	1    750  1050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0122
-U 1 1 6058EA2C
-P 1125 1225
-F 0 "#PWR0122" H 1125 975 50  0001 C CNN
-F 1 "GND" H 1130 1052 50  0000 C CNN
-F 2 "" H 1125 1225 50  0001 C CNN
-F 3 "" H 1125 1225 50  0001 C CNN
-	1    1125 1225
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
-	5425 550  8150 550 
-Wire Notes Line
-	8150 4575 8150 550 
-Wire Notes Line
-	5425 4575 8150 4575
-Text Notes 9150 3225 2    39   Italic 0
+	5400 550  8125 550 
+Text Notes 1400 6900 0    39   Italic 0
 Channel select\n
 Wire Wire Line
-	8825 1225 8450 1225
+	1725 4900 2100 4900
 Wire Notes Line
-	5425 550  5425 4575
-Text Notes 5450 725  0    39   Italic 0
+	5400 550  5400 4575
+Text Notes 5425 725  0    39   Italic 0
 DMG9926USD (2 n-channel / chip)
-Wire Wire Line
-	7475 1000 7925 1000
-Text Label 6925 1250 0    50   ~ 0
-PWM_2
-Wire Wire Line
-	6925 1250 7175 1250
-Wire Wire Line
-	6925 4000 7175 4000
-Text Label 6925 4000 0    50   ~ 0
-PWM_8
-Wire Wire Line
-	7475 4200 7475 4250
-$Comp
-L power:GND #PWR0121
-U 1 1 602258AF
-P 7475 4250
-F 0 "#PWR0121" H 7475 4000 50  0001 C CNN
-F 1 "GND" H 7480 4077 50  0000 C CNN
-F 2 "" H 7475 4250 50  0001 C CNN
-F 3 "" H 7475 4250 50  0001 C CNN
-	1    7475 4250
-	1    0    0    -1  
-$EndComp
-Text Label 7925 3750 2    50   ~ 0
-DRAIN_8
-Wire Wire Line
-	7475 3750 7925 3750
-Wire Wire Line
-	7475 3800 7475 3750
-$Comp
-L mosfet:DMG9926USD Q4
-U 2 1 602258A6
-P 7425 4000
-F 0 "Q4" H 7550 4000 50  0000 L CNN
-F 1 "DMG9926USD" H 7565 3955 50  0001 L CNN
-F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7325 3500 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6850 4160 50  0001 C CNN
-	2    7425 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6925 3100 7175 3100
-Wire Wire Line
-	7475 3300 7475 3350
-$Comp
-L power:GND #PWR0120
-U 1 1 6022589D
-P 7475 3350
-F 0 "#PWR0120" H 7475 3100 50  0001 C CNN
-F 1 "GND" H 7480 3177 50  0000 C CNN
-F 2 "" H 7475 3350 50  0001 C CNN
-F 3 "" H 7475 3350 50  0001 C CNN
-	1    7475 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7475 2850 7925 2850
-Wire Wire Line
-	7475 2900 7475 2850
-$Comp
-L mosfet:DMG9926USD Q3
-U 2 1 60225894
-P 7425 3100
-F 0 "Q3" H 7550 3100 50  0000 L CNN
-F 1 "DMG9926USD" H 7565 3055 50  0001 L CNN
-F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7325 2600 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6850 3260 50  0001 C CNN
-	2    7425 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6925 2175 7175 2175
-Text Label 6925 2175 0    50   ~ 0
-PWM_4
-Wire Wire Line
-	7475 2375 7475 2425
-$Comp
-L power:GND #PWR0118
-U 1 1 6022588B
-P 7475 2425
-F 0 "#PWR0118" H 7475 2175 50  0001 C CNN
-F 1 "GND" H 7480 2252 50  0000 C CNN
-F 2 "" H 7475 2425 50  0001 C CNN
-F 3 "" H 7475 2425 50  0001 C CNN
-	1    7475 2425
-	1    0    0    -1  
-$EndComp
-Text Label 7925 1925 2    50   ~ 0
-DRAIN_4
-Wire Wire Line
-	7475 1925 7925 1925
-Wire Wire Line
-	7475 1975 7475 1925
-$Comp
-L mosfet:DMG9926USD Q2
-U 1 1 60225882
-P 7425 2175
-F 0 "Q2" H 7550 2175 50  0000 L CNN
-F 1 "DMG9926USD" H 7565 2130 50  0001 L CNN
-F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7325 1675 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6850 2335 50  0001 C CNN
-	1    7425 2175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7475 1450 7475 1500
-$Comp
-L power:GND #PWR0115
-U 1 1 6022587B
-P 7475 1500
-F 0 "#PWR0115" H 7475 1250 50  0001 C CNN
-F 1 "GND" H 7480 1327 50  0000 C CNN
-F 2 "" H 7475 1500 50  0001 C CNN
-F 3 "" H 7475 1500 50  0001 C CNN
-	1    7475 1500
-	1    0    0    -1  
-$EndComp
-Text Label 7925 1000 2    50   ~ 0
-DRAIN_2
-Wire Wire Line
-	7475 1050 7475 1000
-$Comp
-L mosfet:DMG9926USD Q1
-U 1 1 60225873
-P 7425 1250
-F 0 "Q1" H 7550 1250 50  0000 L CNN
-F 1 "DMG9926USD" H 7565 1205 50  0001 L CNN
-F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7325 750 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6850 1410 50  0001 C CNN
-	1    7425 1250
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_Push SW6
 U 1 1 6056252E
-P 8900 3475
-F 0 "SW6" H 8900 3668 50  0000 C CNN
-F 1 "SW_Push" H 8900 3669 50  0001 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 8900 3675 50  0001 C CNN
-F 3 "~" H 8900 3675 50  0001 C CNN
-	1    8900 3475
-	-1   0    0    -1  
+P 1650 7150
+F 0 "SW6" H 1650 7343 50  0000 C CNN
+F 1 "SW_Push" H 1650 7344 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 1650 7350 50  0001 C CNN
+F 3 "~" H 1650 7350 50  0001 C CNN
+	1    1650 7150
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 3475 9200 3475
+	1450 7150 1350 7150
 Wire Wire Line
-	9200 3475 9200 3600
+	1350 7150 1350 7275
 $Comp
 L power:GND #PWR0114
 U 1 1 60575B57
-P 9200 3600
-F 0 "#PWR0114" H 9200 3350 50  0001 C CNN
-F 1 "GND" H 9205 3427 50  0000 C CNN
-F 2 "" H 9200 3600 50  0001 C CNN
-F 3 "" H 9200 3600 50  0001 C CNN
-	1    9200 3600
-	1    0    0    -1  
+P 1350 7275
+F 0 "#PWR0114" H 1350 7025 50  0001 C CNN
+F 1 "GND" H 1355 7102 50  0000 C CNN
+F 2 "" H 1350 7275 50  0001 C CNN
+F 3 "" H 1350 7275 50  0001 C CNN
+	1    1350 7275
+	-1   0    0    -1  
 $EndComp
-Text Label 8450 3475 0    50   ~ 0
+Text Label 2100 7150 2    50   ~ 0
 SW6
 Wire Wire Line
-	8700 3475 8450 3475
-Text Notes 8250 650  0    59   ~ 0
+	1850 7150 2100 7150
+Text Notes 575  3900 0    59   ~ 0
 Physical Controls
 Wire Notes Line
-	8225 4575 8225 550 
+	550  7825 550  3800
 Wire Notes Line
-	10150 4575 8200 4575
+	2475 7825 525  7825
 Wire Notes Line
-	10175 550  10175 4575
+	2500 3800 2500 7825
 Wire Notes Line
-	8225 550  10175 550 
+	550  3800 2500 3800
 Wire Wire Line
-	9075 1650 9075 2175
-Connection ~ 9075 1650
-Connection ~ 9075 2175
+	1475 5325 1475 5850
+Connection ~ 1475 5325
+Connection ~ 1475 5850
 Wire Wire Line
-	9075 1125 9075 1650
-Connection ~ 8825 1225
+	1475 4800 1475 5325
+Connection ~ 1725 4900
 Wire Wire Line
-	8825 1225 8825 1750
-Connection ~ 8825 1750
+	1725 4900 1725 5425
+Connection ~ 1725 5425
 Wire Wire Line
-	8825 1750 8825 2275
-Text Label 8450 1225 0    50   ~ 0
+	1725 5425 1725 5950
+Text Label 2100 4900 2    50   ~ 0
 SW_B
-Text Notes 9675 900  2    39   Italic 0
+Text Notes 875  4575 0    39   Italic 0
 Quadrature rotary encoders
 $Comp
 L power:GND #PWR0113
 U 1 1 604BB1C2
-P 9075 2825
-F 0 "#PWR0113" H 9075 2575 50  0001 C CNN
-F 1 "GND" H 9080 2652 50  0000 C CNN
-F 2 "" H 9075 2825 50  0001 C CNN
-F 3 "" H 9075 2825 50  0001 C CNN
-	1    9075 2825
-	1    0    0    -1  
+P 1475 6500
+F 0 "#PWR0113" H 1475 6250 50  0001 C CNN
+F 1 "GND" H 1480 6327 50  0000 C CNN
+F 2 "" H 1475 6500 50  0001 C CNN
+F 3 "" H 1475 6500 50  0001 C CNN
+	1    1475 6500
+	-1   0    0    -1  
 $EndComp
-Connection ~ 9075 2675
+Connection ~ 1475 6350
 Wire Wire Line
-	9075 2675 9075 2825
-Text Label 8450 2575 0    50   ~ 0
+	1475 6350 1475 6500
+Text Label 2100 6250 2    50   ~ 0
 SW5_A
 Wire Wire Line
-	9150 2575 8450 2575
+	1400 6250 2100 6250
 Wire Wire Line
-	9075 2175 9075 2675
+	1475 5850 1475 6350
 Wire Wire Line
-	9075 2675 9150 2675
+	1475 6350 1400 6350
 Wire Wire Line
-	9075 2175 9150 2175
+	1475 5850 1400 5850
 Wire Wire Line
-	9075 1650 9150 1650
+	1475 5325 1400 5325
 Wire Wire Line
-	9150 1125 9075 1125
-Connection ~ 8825 2275
+	1400 4800 1475 4800
+Connection ~ 1725 5950
 Wire Wire Line
-	8825 2775 9150 2775
+	1725 6450 1400 6450
 Wire Wire Line
-	8825 2275 8825 2775
+	1725 5950 1725 6450
 $Comp
 L Device:Rotary_Encoder SW5
 U 1 1 6037F069
-P 9450 2675
-F 0 "SW5" H 9680 2675 50  0000 L CNN
-F 1 "Rotary_Encoder" H 9680 2630 50  0001 L CNN
-F 2 "rgb_footprints:rotary encoder" H 9300 2835 50  0001 C CNN
-F 3 "~" H 9450 2935 50  0001 C CNN
-	1    9450 2675
-	1    0    0    -1  
+P 1100 6350
+F 0 "SW5" H 1330 6350 50  0000 L CNN
+F 1 "Rotary_Encoder" H 1330 6305 50  0001 L CNN
+F 2 "rgb_footprints:rotary encoder" H 950 6510 50  0001 C CNN
+F 3 "~" H 1100 6610 50  0001 C CNN
+	1    1100 6350
+	-1   0    0    -1  
 $EndComp
-Text Label 8450 2075 0    50   ~ 0
+Text Label 2100 5750 2    50   ~ 0
 SW4_A
 Wire Wire Line
-	9150 2075 8450 2075
-Text Label 8450 1550 0    50   ~ 0
+	1400 5750 2100 5750
+Text Label 2100 5225 2    50   ~ 0
 SW3_A
 Wire Wire Line
-	9150 1550 8450 1550
+	1400 5225 2100 5225
 Wire Wire Line
-	8825 2275 9150 2275
+	1725 5950 1400 5950
 Wire Wire Line
-	8825 1750 9150 1750
+	1725 5425 1400 5425
 Wire Wire Line
-	8825 1225 9150 1225
-Text Label 8450 1025 0    50   ~ 0
+	1725 4900 1400 4900
+Text Label 2100 4700 2    50   ~ 0
 SW2_A
 Wire Wire Line
-	9150 1025 8450 1025
+	1400 4700 2100 4700
 $Comp
 L Device:Rotary_Encoder SW4
 U 1 1 6031F78F
-P 9450 2175
-F 0 "SW4" H 9680 2175 50  0000 L CNN
-F 1 "Rotary_Encoder" H 9680 2130 50  0001 L CNN
-F 2 "rgb_footprints:rotary encoder" H 9300 2335 50  0001 C CNN
-F 3 "~" H 9450 2435 50  0001 C CNN
-	1    9450 2175
-	1    0    0    -1  
+P 1100 5850
+F 0 "SW4" H 1330 5850 50  0000 L CNN
+F 1 "Rotary_Encoder" H 1330 5805 50  0001 L CNN
+F 2 "rgb_footprints:rotary encoder" H 950 6010 50  0001 C CNN
+F 3 "~" H 1100 6110 50  0001 C CNN
+	1    1100 5850
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:Rotary_Encoder SW2
 U 1 1 6031C1AC
-P 9450 1125
-F 0 "SW2" H 9680 1125 50  0000 L CNN
-F 1 "Rotary_Encoder" H 9680 1080 50  0001 L CNN
-F 2 "rgb_footprints:rotary encoder" H 9300 1285 50  0001 C CNN
-F 3 "~" H 9450 1385 50  0001 C CNN
-	1    9450 1125
-	1    0    0    -1  
+P 1100 4800
+F 0 "SW2" H 1330 4800 50  0000 L CNN
+F 1 "Rotary_Encoder" H 1330 4755 50  0001 L CNN
+F 2 "rgb_footprints:rotary encoder" H 950 4960 50  0001 C CNN
+F 3 "~" H 1100 5060 50  0001 C CNN
+	1    1100 4800
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:Rotary_Encoder SW3
 U 1 1 603169D6
-P 9450 1650
-F 0 "SW3" H 9680 1650 50  0000 L CNN
-F 1 "Rotary_Encoder" H 9680 1605 50  0001 L CNN
-F 2 "rgb_footprints:rotary encoder" H 9300 1810 50  0001 C CNN
-F 3 "~" H 9450 1910 50  0001 C CNN
-	1    9450 1650
-	1    0    0    -1  
+P 1100 5325
+F 0 "SW3" H 1330 5325 50  0000 L CNN
+F 1 "Rotary_Encoder" H 1330 5280 50  0001 L CNN
+F 2 "rgb_footprints:rotary encoder" H 950 5485 50  0001 C CNN
+F 3 "~" H 1100 5585 50  0001 C CNN
+	1    1100 5325
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	6150 1000 6600 1000
-Text Label 5600 1250 0    50   ~ 0
-PWM_1
-Wire Wire Line
-	5600 1250 5850 1250
-Text Notes 5450 650  0    59   ~ 0
+Text Notes 5425 650  0    59   ~ 0
 LED Driver Mosfets
-Wire Wire Line
-	5600 4000 5850 4000
-Text Label 5600 4000 0    50   ~ 0
-PWM_7
-Wire Wire Line
-	6150 4200 6150 4250
-$Comp
-L power:GND #PWR0111
-U 1 1 5FEAD25F
-P 6150 4250
-F 0 "#PWR0111" H 6150 4000 50  0001 C CNN
-F 1 "GND" H 6155 4077 50  0000 C CNN
-F 2 "" H 6150 4250 50  0001 C CNN
-F 3 "" H 6150 4250 50  0001 C CNN
-	1    6150 4250
-	1    0    0    -1  
-$EndComp
-Text Label 6600 3750 2    50   ~ 0
-DRAIN_7
-Wire Wire Line
-	6150 3750 6600 3750
-Wire Wire Line
-	6150 3800 6150 3750
-$Comp
-L mosfet:DMG9926USD Q4
-U 1 1 5FEAD256
-P 6100 4000
-F 0 "Q4" H 6225 4000 50  0000 L CNN
-F 1 "DMG9926USD" H 6240 3955 50  0001 L CNN
-F 2 "rgb_footprints:DMG9926USD_Handsolder" H 6000 3500 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 4160 50  0001 C CNN
-	1    6100 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 3100 5850 3100
-Text Label 5600 3100 0    50   ~ 0
-PWM_5
-Wire Wire Line
-	6150 3300 6150 3350
-$Comp
-L power:GND #PWR0110
-U 1 1 5FEAD24D
-P 6150 3350
-F 0 "#PWR0110" H 6150 3100 50  0001 C CNN
-F 1 "GND" H 6155 3177 50  0000 C CNN
-F 2 "" H 6150 3350 50  0001 C CNN
-F 3 "" H 6150 3350 50  0001 C CNN
-	1    6150 3350
-	1    0    0    -1  
-$EndComp
-Text Label 6600 2850 2    50   ~ 0
-DRAIN_5
-Wire Wire Line
-	6150 2850 6600 2850
-Wire Wire Line
-	6150 2900 6150 2850
-$Comp
-L mosfet:DMG9926USD Q3
-U 1 1 5FEAD244
-P 6100 3100
-F 0 "Q3" H 6225 3100 50  0000 L CNN
-F 1 "DMG9926USD" H 6240 3055 50  0001 L CNN
-F 2 "rgb_footprints:DMG9926USD_Handsolder" H 6000 2600 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 3260 50  0001 C CNN
-	1    6100 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 2175 5850 2175
-Text Label 5600 2175 0    50   ~ 0
-PWM_3
-Wire Wire Line
-	6150 2375 6150 2425
-$Comp
-L power:GND #PWR0109
-U 1 1 5FEA709B
-P 6150 2425
-F 0 "#PWR0109" H 6150 2175 50  0001 C CNN
-F 1 "GND" H 6155 2252 50  0000 C CNN
-F 2 "" H 6150 2425 50  0001 C CNN
-F 3 "" H 6150 2425 50  0001 C CNN
-	1    6150 2425
-	1    0    0    -1  
-$EndComp
-Text Label 6600 1925 2    50   ~ 0
-DRAIN_3
-Wire Wire Line
-	6150 1925 6600 1925
-Wire Wire Line
-	6150 1975 6150 1925
-$Comp
-L mosfet:DMG9926USD Q2
-U 2 1 5FEA7092
-P 6100 2175
-F 0 "Q2" H 6225 2175 50  0000 L CNN
-F 1 "DMG9926USD" H 6240 2130 50  0001 L CNN
-F 2 "rgb_footprints:DMG9926USD_Handsolder" H 6000 1675 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 2335 50  0001 C CNN
-	2    6100 2175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 1450 6150 1500
-$Comp
-L power:GND #PWR0108
-U 1 1 5FE9DAE6
-P 6150 1500
-F 0 "#PWR0108" H 6150 1250 50  0001 C CNN
-F 1 "GND" H 6155 1327 50  0000 C CNN
-F 2 "" H 6150 1500 50  0001 C CNN
-F 3 "" H 6150 1500 50  0001 C CNN
-	1    6150 1500
-	1    0    0    -1  
-$EndComp
-Text Label 6600 1000 2    50   ~ 0
-DRAIN_1
-Wire Wire Line
-	6150 1050 6150 1000
 Text Notes 575  2250 0    50   ~ 0
 DC-DC Converter
 Wire Notes Line
 	550  2150 550  3750
-$Comp
-L mosfet:DMG9926USD Q1
-U 2 1 5FE90B41
-P 6100 1250
-F 0 "Q1" H 6225 1250 50  0000 L CNN
-F 1 "DMG9926USD" H 6240 1205 50  0001 L CNN
-F 2 "rgb_footprints:DMG9926USD_Handsolder" H 6000 750 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5525 1410 50  0001 C CNN
-	2    6100 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5FEC47B0
-P 3850 1000
-F 0 "#FLG0101" H 3850 1075 50  0001 C CNN
-F 1 "PWR_FLAG" H 3850 1173 50  0001 C CNN
-F 2 "" H 3850 1000 50  0001 C CNN
-F 3 "~" H 3850 1000 50  0001 C CNN
-F 4 "Power flag for ERC" H 3850 1173 50  0001 C CNN "Description"
-	1    3850 1000
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	5350 550  5350 2100
-Wire Wire Line
-	1125 1150 1125 1225
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5FF475F8
-P 1050 1000
-F 0 "#FLG0102" H 1050 1075 50  0001 C CNN
-F 1 "PWR_FLAG" H 1050 1173 50  0001 C CNN
-F 2 "" H 1050 1000 50  0001 C CNN
-F 3 "~" H 1050 1000 50  0001 C CNN
-F 4 "Power flag for ERC" H 1050 1173 50  0001 C CNN "Description"
-	1    1050 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  1150 1050 1150
-Wire Wire Line
-	3850 1000 3850 1050
-Wire Wire Line
-	1050 1000 1050 1150
-Connection ~ 1050 1150
-Wire Wire Line
-	1050 1150 1125 1150
-Text Label 2425 1350 0    50   ~ 0
-DRAIN_1
-$Comp
-L Connector_Generic:Conn_01x05 J2
-U 1 1 6056847E
-P 2950 1450
-F 0 "J2" H 2900 1750 50  0000 L CNN
-F 1 "Conn_01x05" H 3030 1401 50  0001 L CNN
-F 2 "rgb_footprints:CUI_TB003-500-P05BE" H 2950 1450 50  0001 C CNN
-F 3 "~" H 2950 1450 50  0001 C CNN
-	1    2950 1450
-	1    0    0    -1  
-$EndComp
-Text Notes 2700 1775 0    39   Italic 0
-Channel 1
-Wire Wire Line
-	950  1050 1075 1050
-Wire Wire Line
-	3175 1350 3525 1350
-Wire Wire Line
-	3175 1450 3525 1450
-Wire Wire Line
-	3175 1550 3525 1550
-Wire Wire Line
-	3175 1650 3525 1650
-Wire Wire Line
-	2750 1250 2700 1250
-Wire Wire Line
-	2700 1250 2700 1050
-Wire Wire Line
-	3475 1250 3475 1050
-Wire Wire Line
-	3475 1250 3525 1250
-Connection ~ 3475 1050
-$Comp
-L Device:Fuse F1
-U 1 1 603B9E5C
-P 1225 1050
-F 0 "F1" V 1120 1050 50  0000 C CNN
-F 1 "0685H9200-01" V 1119 1050 50  0001 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1155 1050 50  0001 C CNN
-F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-c1h-series.pdf" H 1225 1050 50  0001 C CNN
-	1    1225 1050
-	0    1    1    0   
-$EndComp
-Text Notes 575  3900 0    59   ~ 0
+Text Notes 2575 3900 0    59   ~ 0
 MCU
 Wire Notes Line
-	550  3800 3775 3800
-Wire Notes Line
-	550  7225 550  3800
-Wire Notes Line
-	3775 7225 550  7225
-Wire Notes Line
-	3775 3800 3775 7225
-Text Notes 575  7200 0    39   ~ 0
+	2550 7225 2550 3800
+Text Notes 2575 7200 0    39   ~ 0
 Layout:\nPlace C5 as close to VDD as possible (refer to AVR040 4.6)
-$Comp
-L power:GND #PWR0116
-U 1 1 6006D59F
-P 1375 4925
-F 0 "#PWR0116" H 1375 4675 50  0001 C CNN
-F 1 "GND" H 1380 4752 50  0000 C CNN
-F 2 "" H 1375 4925 50  0001 C CNN
-F 3 "" H 1375 4925 50  0001 C CNN
-	1    1375 4925
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0117
-U 1 1 60086CC4
-P 2025 4375
-F 0 "#PWR0117" H 2025 4225 50  0001 C CNN
-F 1 "+5V" H 2040 4548 50  0000 C CNN
-F 2 "" H 2025 4375 50  0001 C CNN
-F 3 "" H 2025 4375 50  0001 C CNN
-	1    2025 4375
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C4
-U 1 1 60067E8F
-P 1375 4775
-F 0 "C4" H 1150 4825 50  0000 L CNN
-F 1 "100 nF" H 975 4750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1375 4775 50  0001 C CNN
-F 3 "~" H 1375 4775 50  0001 C CNN
-	1    1375 4775
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0119
-U 1 1 601F6636
-P 2025 6550
-F 0 "#PWR0119" H 2025 6300 50  0001 C CNN
-F 1 "GND" H 2030 6377 50  0000 C CNN
-F 2 "" H 2025 6550 50  0001 C CNN
-F 3 "" H 2025 6550 50  0001 C CNN
-	1    2025 6550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2625 5200 3150 5200
-Text Label 3150 5200 2    50   ~ 0
-PWM_4
-Wire Wire Line
-	1425 5900 900  5900
-Text Label 900  5900 0    50   ~ 0
-PWM_8
-Wire Wire Line
-	1425 5800 900  5800
-Text Label 900  5800 0    50   ~ 0
-PWM_7
-Wire Wire Line
-	2625 5900 3150 5900
-Text Label 3150 5900 2    50   ~ 0
-PWM_2
-Wire Wire Line
-	2625 5800 3150 5800
-Text Label 3150 5800 2    50   ~ 0
-PWM_1
-$Comp
-L MCU_Microchip_ATtiny:ATtiny416-S U1
-U 1 1 60251F87
-P 2025 5600
-F 0 "U1" H 2150 6650 50  0000 C CNN
-F 1 "ATtiny416-SNR" H 2400 6575 50  0000 C CNN
-F 2 "rgb_footprints:ATTINY416-SNR" H 2025 5600 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001913A.pdf" H 2025 5600 50  0001 C CNN
-	1    2025 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2025 6500 2025 6550
-Wire Wire Line
-	2625 6000 3150 6000
-Text Label 3150 6000 2    50   ~ 0
-PWM_3
-Wire Wire Line
-	2625 6100 3150 6100
-Text Label 3150 6100 2    50   ~ 0
-SW_B
-Wire Wire Line
-	2625 6200 3150 6200
-Text Label 3150 6200 2    50   ~ 0
-SW6
-Wire Wire Line
-	1425 6100 900  6100
-Text Label 900  6100 0    50   ~ 0
-SW3_A
-Wire Wire Line
-	1425 6000 900  6000
-Text Label 900  6000 0    50   ~ 0
-SW2_A
-Wire Wire Line
-	2625 5500 3150 5500
-Text Label 3150 5500 2    50   ~ 0
-SW4_A
-Wire Wire Line
-	2625 5600 3150 5600
-Text Label 3150 5600 2    50   ~ 0
-SW5_A
-Wire Wire Line
-	2625 5000 3150 5000
-Text Label 3150 5000 2    50   ~ 0
-TWI_SDA
-Wire Wire Line
-	2625 5100 3150 5100
-Text Label 3150 5100 2    50   ~ 0
-TWI_SCL
-Wire Wire Line
-	2625 5300 3150 5300
-Text Label 3150 5300 2    50   ~ 0
-PWM_5
-Wire Wire Line
-	2625 5400 3150 5400
-Text Label 3150 5400 2    50   ~ 0
-PWM_6
-Wire Wire Line
-	2625 4900 3150 4900
-Text Label 3150 4900 2    50   ~ 0
-RESET
 $Comp
 L power:GND #PWR0107
 U 1 1 5FEF1B51
@@ -906,26 +253,6 @@ F 3 "~" H 1675 3050 50  0001 C CNN
 	1    1675 2850
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2625 6300 3150 6300
-Text Label 3150 6300 2    50   ~ 0
-PWR_EN
-Connection ~ 3850 1050
-Wire Wire Line
-	3850 1050 3900 1050
-Wire Wire Line
-	3475 1050 3850 1050
-Wire Wire Line
-	2025 4375 2025 4625
-Wire Wire Line
-	1375 4875 1375 4925
-Wire Wire Line
-	2025 4625 1375 4625
-Wire Wire Line
-	1375 4625 1375 4675
-Connection ~ 2025 4625
-Wire Wire Line
-	2025 4625 2025 4700
 $Comp
 L MIC5203:MIC5203-5.0YM4-TR U2
 U 1 1 5FEE6BDA
@@ -1003,10 +330,10 @@ F 3 "" H 1400 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L Device:C_Small C2
 U 1 1 6004E189
 P 3550 2975
-F 0 "C3" H 3642 3021 50  0000 L CNN
+F 0 "C2" H 3642 3021 50  0000 L CNN
 F 1 "470 nF" H 3642 2930 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3550 2975 50  0001 C CNN
 F 3 "~" H 3550 2975 50  0001 C CNN
@@ -1060,49 +387,748 @@ Wire Wire Line
 	1400 2500 1400 2850
 Wire Wire Line
 	2475 2500 2475 2650
-$Comp
-L Device:CP1 C1
-U 1 1 601654E9
-P 1600 1350
-F 0 "C1" H 1715 1396 50  0000 L CNN
-F 1 "220 uF" H 1715 1305 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 1600 1350 50  0001 C CNN
-F 3 "~" H 1600 1350 50  0001 C CNN
-	1    1600 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 1050 1600 1200
-Wire Wire Line
-	1600 1500 1600 1550
-$Comp
-L power:GND #PWR0105
-U 1 1 601721AC
-P 1600 1550
-F 0 "#PWR0105" H 1600 1300 50  0001 C CNN
-F 1 "GND" H 1605 1377 50  0000 C CNN
-F 2 "" H 1600 1550 50  0001 C CNN
-F 3 "" H 1600 1550 50  0001 C CNN
-	1    1600 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2475 2500 1400 2500
 Wire Wire Line
 	1400 2400 1400 2500
 Connection ~ 1400 2500
-Connection ~ 2700 1050
-Wire Wire Line
-	2700 1050 3475 1050
 Wire Wire Line
 	4050 2650 4375 2650
-Connection ~ 1600 1050
+Wire Notes Line
+	2550 3800 5350 3800
+Wire Notes Line
+	5350 7225 2550 7225
+Wire Notes Line
+	5350 3800 5350 7225
 Wire Wire Line
-	1600 1050 2700 1050
+	3975 4650 3975 4725
+Connection ~ 3975 4650
 Wire Wire Line
-	1375 1050 1600 1050
-Text Label 6925 3100 0    50   ~ 0
+	3325 4650 3325 4700
+Wire Wire Line
+	3975 4650 3325 4650
+Wire Wire Line
+	3325 4900 3325 4950
+Wire Wire Line
+	3975 4400 3975 4650
+Text Label 5100 6325 2    50   ~ 0
+PWR_EN
+Wire Wire Line
+	4575 6325 5100 6325
+Text Label 5100 4925 2    50   ~ 0
+RESET
+Wire Wire Line
+	4575 4925 5100 4925
+Text Label 5100 5425 2    50   ~ 0
 PWM_6
-Text Label 7925 2850 2    50   ~ 0
+Wire Wire Line
+	4575 5425 5100 5425
+Text Label 5100 5325 2    50   ~ 0
+PWM_5
+Wire Wire Line
+	4575 5325 5100 5325
+Text Label 5100 5125 2    50   ~ 0
+TWI_SCL
+Wire Wire Line
+	4575 5125 5100 5125
+Text Label 5100 5025 2    50   ~ 0
+TWI_SDA
+Wire Wire Line
+	4575 5025 5100 5025
+Text Label 5100 5625 2    50   ~ 0
+SW5_A
+Wire Wire Line
+	4575 5625 5100 5625
+Text Label 5100 5525 2    50   ~ 0
+SW4_A
+Wire Wire Line
+	4575 5525 5100 5525
+Text Label 2850 6025 0    50   ~ 0
+SW2_A
+Wire Wire Line
+	3375 6025 2850 6025
+Text Label 2850 6125 0    50   ~ 0
+SW3_A
+Wire Wire Line
+	3375 6125 2850 6125
+Text Label 5100 6225 2    50   ~ 0
+SW6
+Wire Wire Line
+	4575 6225 5100 6225
+Text Label 5100 6125 2    50   ~ 0
+SW_B
+Wire Wire Line
+	4575 6125 5100 6125
+Text Label 5100 6025 2    50   ~ 0
+PWM_3
+Wire Wire Line
+	4575 6025 5100 6025
+Wire Wire Line
+	3975 6525 3975 6575
+$Comp
+L MCU_Microchip_ATtiny:ATtiny416-S U1
+U 1 1 60251F87
+P 3975 5625
+F 0 "U1" H 4100 6675 50  0000 C CNN
+F 1 "ATtiny416-SNR" H 4350 6600 50  0000 C CNN
+F 2 "rgb_footprints:ATTINY416-SNR" H 3975 5625 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001913A.pdf" H 3975 5625 50  0001 C CNN
+	1    3975 5625
+	1    0    0    -1  
+$EndComp
+Text Label 5100 5825 2    50   ~ 0
+PWM_1
+Wire Wire Line
+	4575 5825 5100 5825
+Text Label 5100 5925 2    50   ~ 0
+PWM_2
+Wire Wire Line
+	4575 5925 5100 5925
+Text Label 2850 5825 0    50   ~ 0
+PWM_7
+Wire Wire Line
+	3375 5825 2850 5825
+Text Label 2850 5925 0    50   ~ 0
+PWM_8
+Wire Wire Line
+	3375 5925 2850 5925
+Text Label 5100 5225 2    50   ~ 0
+PWM_4
+Wire Wire Line
+	4575 5225 5100 5225
+$Comp
+L power:GND #PWR0119
+U 1 1 601F6636
+P 3975 6575
+F 0 "#PWR0119" H 3975 6325 50  0001 C CNN
+F 1 "GND" H 3980 6402 50  0000 C CNN
+F 2 "" H 3975 6575 50  0001 C CNN
+F 3 "" H 3975 6575 50  0001 C CNN
+	1    3975 6575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 60067E8F
+P 3325 4800
+F 0 "C3" H 3100 4850 50  0000 L CNN
+F 1 "100 nF" H 2925 4775 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3325 4800 50  0001 C CNN
+F 3 "~" H 3325 4800 50  0001 C CNN
+	1    3325 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0117
+U 1 1 60086CC4
+P 3975 4400
+F 0 "#PWR0117" H 3975 4250 50  0001 C CNN
+F 1 "+5V" H 3990 4573 50  0000 C CNN
+F 2 "" H 3975 4400 50  0001 C CNN
+F 3 "" H 3975 4400 50  0001 C CNN
+	1    3975 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 6006D59F
+P 3325 4950
+F 0 "#PWR0116" H 3325 4700 50  0001 C CNN
+F 1 "GND" H 3330 4777 50  0000 C CNN
+F 2 "" H 3325 4950 50  0001 C CNN
+F 3 "" H 3325 4950 50  0001 C CNN
+	1    3325 4950
+	1    0    0    -1  
+$EndComp
+Text Notes 8200 650  0    50   ~ 0
+Connectors\n
+Wire Wire Line
+	3350 1075 3600 1075
+Connection ~ 3350 1075
+Wire Wire Line
+	3125 1075 3350 1075
+Wire Wire Line
+	2475 1075 2825 1075
+$Comp
+L power:GND #PWR0105
+U 1 1 601721AC
+P 3350 1575
+F 0 "#PWR0105" H 3350 1325 50  0001 C CNN
+F 1 "GND" H 3355 1402 50  0000 C CNN
+F 2 "" H 3350 1575 50  0001 C CNN
+F 3 "" H 3350 1575 50  0001 C CNN
+	1    3350 1575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1525 3350 1575
+Wire Wire Line
+	3350 1075 3350 1225
+$Comp
+L Device:CP1 C1
+U 1 1 601654E9
+P 3350 1375
+F 0 "C1" H 3465 1421 50  0000 L CNN
+F 1 "220 uF" H 3465 1330 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 3350 1375 50  0001 C CNN
+F 3 "~" H 3350 1375 50  0001 C CNN
+	1    3350 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1075 3650 1075
+Connection ~ 3600 1075
+$Comp
+L Device:Fuse F1
+U 1 1 603B9E5C
+P 2975 1075
+F 0 "F1" V 2870 1075 50  0000 C CNN
+F 1 "0685H9200-01" V 2869 1075 50  0001 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2905 1075 50  0001 C CNN
+F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-c1h-series.pdf" H 2975 1075 50  0001 C CNN
+	1    2975 1075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 1175 2650 1175
+Connection ~ 2600 1175
+Wire Wire Line
+	2600 1025 2600 1175
+Wire Wire Line
+	3600 1050 3600 1075
+Wire Wire Line
+	2475 1175 2600 1175
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FF475F8
+P 2600 1025
+F 0 "#FLG0102" H 2600 1100 50  0001 C CNN
+F 1 "PWR_FLAG" H 2600 1198 50  0001 C CNN
+F 2 "" H 2600 1025 50  0001 C CNN
+F 3 "~" H 2600 1025 50  0001 C CNN
+F 4 "Power flag for ERC" H 2600 1198 50  0001 C CNN "Description"
+	1    2600 1025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1175 2650 1250
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FEC47B0
+P 3600 1050
+F 0 "#FLG0101" H 3600 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 3600 1223 50  0001 C CNN
+F 2 "" H 3600 1050 50  0001 C CNN
+F 3 "~" H 3600 1050 50  0001 C CNN
+F 4 "Power flag for ERC" H 3600 1223 50  0001 C CNN "Description"
+	1    3600 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 6058EA2C
+P 2650 1250
+F 0 "#PWR0122" H 2650 1000 50  0001 C CNN
+F 1 "GND" H 2655 1077 50  0000 C CNN
+F 2 "" H 2650 1250 50  0001 C CNN
+F 3 "" H 2650 1250 50  0001 C CNN
+	1    2650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 6058024D
+P 2275 1075
+F 0 "J1" H 2275 1175 50  0000 C CNN
+F 1 "1935776" H 2193 841 50  0001 C CNN
+F 2 "rgb_footprints:barrel jack" H 2275 1075 50  0001 C CNN
+F 3 "https://www.phoenixcontact.com/pxc-oc-itemdetail-pdf-web/eshop?lineItemType=LineItem&UID=1935776" H 2275 1075 50  0001 C CNN
+	1    2275 1075
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0123
+U 1 1 606245F0
+P 3650 1075
+F 0 "#PWR0123" H 3650 925 50  0001 C CNN
+F 1 "+12V" V 3665 1203 50  0000 L CNN
+F 2 "" H 3650 1075 50  0001 C CNN
+F 3 "" H 3650 1075 50  0001 C CNN
+	1    3650 1075
+	0    1    1    0   
+$EndComp
+Text Notes 2200 1300 0    39   Italic 0
+Barrel Plug
+Text Notes 575  650  0    59   ~ 0
+Power In
+Wire Notes Line
+	5400 4575 8125 4575
+Wire Wire Line
+	6125 1000 6575 1000
+$Comp
+L mosfet:DMG9926USD Q1
+U 2 1 5FE90B41
+P 6075 1250
+F 0 "Q1" H 6200 1250 50  0000 L CNN
+F 1 "DMG9926USD" H 6215 1205 50  0001 L CNN
+F 2 "rgb_footprints:DMG9926USD_Handsolder" H 5975 750 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5500 1410 50  0001 C CNN
+	2    6075 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 1050 6125 1000
+Text Label 6575 1000 2    50   ~ 0
+DRAIN_1
+$Comp
+L power:GND #PWR0108
+U 1 1 5FE9DAE6
+P 6125 1500
+F 0 "#PWR0108" H 6125 1250 50  0001 C CNN
+F 1 "GND" H 6130 1327 50  0000 C CNN
+F 2 "" H 6125 1500 50  0001 C CNN
+F 3 "" H 6125 1500 50  0001 C CNN
+	1    6125 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 1450 6125 1500
+Wire Wire Line
+	5575 1250 5825 1250
+Text Label 5575 1250 0    50   ~ 0
+PWM_1
+$Comp
+L mosfet:DMG9926USD Q2
+U 2 1 5FEA7092
+P 6075 2175
+F 0 "Q2" H 6200 2175 50  0000 L CNN
+F 1 "DMG9926USD" H 6215 2130 50  0001 L CNN
+F 2 "rgb_footprints:DMG9926USD_Handsolder" H 5975 1675 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5500 2335 50  0001 C CNN
+	2    6075 2175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 1975 6125 1925
+Wire Wire Line
+	6125 1925 6575 1925
+Text Label 6575 1925 2    50   ~ 0
+DRAIN_3
+$Comp
+L power:GND #PWR0109
+U 1 1 5FEA709B
+P 6125 2425
+F 0 "#PWR0109" H 6125 2175 50  0001 C CNN
+F 1 "GND" H 6130 2252 50  0000 C CNN
+F 2 "" H 6125 2425 50  0001 C CNN
+F 3 "" H 6125 2425 50  0001 C CNN
+	1    6125 2425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 2375 6125 2425
+Text Label 5575 2175 0    50   ~ 0
+PWM_3
+Wire Wire Line
+	5575 2175 5825 2175
+Wire Wire Line
+	7450 1000 7900 1000
+Text Label 6900 1250 0    50   ~ 0
+PWM_2
+Wire Wire Line
+	6900 1250 7150 1250
+Wire Wire Line
+	7450 1450 7450 1500
+$Comp
+L power:GND #PWR0115
+U 1 1 6022587B
+P 7450 1500
+F 0 "#PWR0115" H 7450 1250 50  0001 C CNN
+F 1 "GND" H 7455 1327 50  0000 C CNN
+F 2 "" H 7450 1500 50  0001 C CNN
+F 3 "" H 7450 1500 50  0001 C CNN
+	1    7450 1500
+	1    0    0    -1  
+$EndComp
+Text Label 7900 1000 2    50   ~ 0
+DRAIN_2
+Wire Wire Line
+	7450 1050 7450 1000
+$Comp
+L mosfet:DMG9926USD Q1
+U 1 1 60225873
+P 7400 1250
+F 0 "Q1" H 7525 1250 50  0000 L CNN
+F 1 "DMG9926USD" H 7540 1205 50  0001 L CNN
+F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7300 750 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6825 1410 50  0001 C CNN
+	1    7400 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2175 7150 2175
+Text Label 6900 2175 0    50   ~ 0
+PWM_4
+Wire Wire Line
+	7450 2375 7450 2425
+$Comp
+L power:GND #PWR0118
+U 1 1 6022588B
+P 7450 2425
+F 0 "#PWR0118" H 7450 2175 50  0001 C CNN
+F 1 "GND" H 7455 2252 50  0000 C CNN
+F 2 "" H 7450 2425 50  0001 C CNN
+F 3 "" H 7450 2425 50  0001 C CNN
+	1    7450 2425
+	1    0    0    -1  
+$EndComp
+Text Label 7900 1925 2    50   ~ 0
+DRAIN_4
+Wire Wire Line
+	7450 1925 7900 1925
+Wire Wire Line
+	7450 1975 7450 1925
+$Comp
+L mosfet:DMG9926USD Q2
+U 1 1 60225882
+P 7400 2175
+F 0 "Q2" H 7525 2175 50  0000 L CNN
+F 1 "DMG9926USD" H 7540 2130 50  0001 L CNN
+F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7300 1675 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6825 2335 50  0001 C CNN
+	1    7400 2175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8675 1125 8675 1075
+$Comp
+L power:+12V #PWR0112
+U 1 1 6023445A
+P 8675 1075
+F 0 "#PWR0112" H 8675 925 50  0001 C CNN
+F 1 "+12V" H 8575 1225 50  0000 L CNN
+F 2 "" H 8675 1075 50  0001 C CNN
+F 3 "" H 8675 1075 50  0001 C CNN
+	1    8675 1075
+	-1   0    0    -1  
+$EndComp
+Text Label 8475 1325 0    50   ~ 0
+DRAIN_2
+Text Label 8475 1525 0    50   ~ 0
+DRAIN_4
+Text Label 8475 1425 0    50   ~ 0
+DRAIN_3
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 6056847E
+P 9000 1325
+F 0 "J2" H 8950 1625 50  0000 L CNN
+F 1 "Conn_01x05" H 9080 1276 50  0001 L CNN
+F 2 "rgb_footprints:CUI_TB003-500-P05BE" H 9000 1325 50  0001 C CNN
+F 3 "~" H 9000 1325 50  0001 C CNN
+	1    9000 1325
+	1    0    0    -1  
+$EndComp
+Text Notes 8750 1650 0    39   Italic 0
+Channel 1
+Wire Wire Line
+	8800 1125 8675 1125
+Wire Wire Line
+	8800 1325 8475 1325
+Wire Wire Line
+	8475 1425 8800 1425
+Wire Wire Line
+	8800 1525 8475 1525
+Text Label 8475 1225 0    50   ~ 0
+DRAIN_1
+Wire Wire Line
+	8475 1225 8800 1225
+Wire Wire Line
+	8450 2450 8800 2450
+Wire Wire Line
+	8450 2350 8800 2350
+Wire Wire Line
+	8450 2250 8800 2250
+Wire Wire Line
+	8450 2150 8800 2150
+Text Label 8450 2350 0    50   ~ 0
+DRAIN_7
+Text Label 8450 2450 0    50   ~ 0
+DRAIN_8
+Text Label 8450 2150 0    50   ~ 0
+DRAIN_5
+Text Label 8450 2250 0    50   ~ 0
 DRAIN_6
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 606245EA
+P 9000 2250
+F 0 "J3" H 8950 2550 50  0000 L CNN
+F 1 "Conn_01x05" H 8918 1916 50  0001 C CNN
+F 2 "rgb_footprints:CUI_TB003-500-P05BE" H 9000 2250 50  0001 C CNN
+F 3 "~" H 9000 2250 50  0001 C CNN
+	1    9000 2250
+	1    0    0    -1  
+$EndComp
+Text Notes 8750 2575 0    39   Italic 0
+Channel 2\n
+Wire Wire Line
+	8800 2050 8675 2050
+$Comp
+L power:+12V #PWR0128
+U 1 1 6022ED3C
+P 8675 2000
+F 0 "#PWR0128" H 8675 1850 50  0001 C CNN
+F 1 "+12V" H 8575 2150 50  0000 L CNN
+F 2 "" H 8675 2000 50  0001 C CNN
+F 3 "" H 8675 2000 50  0001 C CNN
+	1    8675 2000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8675 2050 8675 2000
+Text Label 7900 2850 2    50   ~ 0
+DRAIN_6
+Text Label 6900 3100 0    50   ~ 0
+PWM_6
+$Comp
+L mosfet:DMG9926USD Q3
+U 2 1 60225894
+P 7400 3100
+F 0 "Q3" H 7525 3100 50  0000 L CNN
+F 1 "DMG9926USD" H 7540 3055 50  0001 L CNN
+F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7300 2600 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6825 3260 50  0001 C CNN
+	2    7400 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2900 7450 2850
+Wire Wire Line
+	7450 2850 7900 2850
+$Comp
+L power:GND #PWR0120
+U 1 1 6022589D
+P 7450 3350
+F 0 "#PWR0120" H 7450 3100 50  0001 C CNN
+F 1 "GND" H 7455 3177 50  0000 C CNN
+F 2 "" H 7450 3350 50  0001 C CNN
+F 3 "" H 7450 3350 50  0001 C CNN
+	1    7450 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3300 7450 3350
+Wire Wire Line
+	6900 3100 7150 3100
+$Comp
+L mosfet:DMG9926USD Q4
+U 2 1 602258A6
+P 7400 4000
+F 0 "Q4" H 7525 4000 50  0000 L CNN
+F 1 "DMG9926USD" H 7540 3955 50  0001 L CNN
+F 2 "rgb_footprints:DMG9926USD_Handsolder" H 7300 3500 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6825 4160 50  0001 C CNN
+	2    7400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3800 7450 3750
+Wire Wire Line
+	7450 3750 7900 3750
+Text Label 7900 3750 2    50   ~ 0
+DRAIN_8
+$Comp
+L power:GND #PWR0121
+U 1 1 602258AF
+P 7450 4250
+F 0 "#PWR0121" H 7450 4000 50  0001 C CNN
+F 1 "GND" H 7455 4077 50  0000 C CNN
+F 2 "" H 7450 4250 50  0001 C CNN
+F 3 "" H 7450 4250 50  0001 C CNN
+	1    7450 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4200 7450 4250
+Text Label 6900 4000 0    50   ~ 0
+PWM_8
+Wire Wire Line
+	6900 4000 7150 4000
+Wire Wire Line
+	5575 4000 5825 4000
+Text Label 5575 4000 0    50   ~ 0
+PWM_7
+Wire Wire Line
+	6125 4200 6125 4250
+$Comp
+L power:GND #PWR0111
+U 1 1 5FEAD25F
+P 6125 4250
+F 0 "#PWR0111" H 6125 4000 50  0001 C CNN
+F 1 "GND" H 6130 4077 50  0000 C CNN
+F 2 "" H 6125 4250 50  0001 C CNN
+F 3 "" H 6125 4250 50  0001 C CNN
+	1    6125 4250
+	1    0    0    -1  
+$EndComp
+Text Label 6575 3750 2    50   ~ 0
+DRAIN_7
+Wire Wire Line
+	6125 3750 6575 3750
+Wire Wire Line
+	6125 3800 6125 3750
+$Comp
+L mosfet:DMG9926USD Q4
+U 1 1 5FEAD256
+P 6075 4000
+F 0 "Q4" H 6200 4000 50  0000 L CNN
+F 1 "DMG9926USD" H 6215 3955 50  0001 L CNN
+F 2 "rgb_footprints:DMG9926USD_Handsolder" H 5975 3500 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5500 4160 50  0001 C CNN
+	1    6075 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 3100 5825 3100
+Text Label 5575 3100 0    50   ~ 0
+PWM_5
+Wire Wire Line
+	6125 3300 6125 3350
+$Comp
+L power:GND #PWR0110
+U 1 1 5FEAD24D
+P 6125 3350
+F 0 "#PWR0110" H 6125 3100 50  0001 C CNN
+F 1 "GND" H 6130 3177 50  0000 C CNN
+F 2 "" H 6125 3350 50  0001 C CNN
+F 3 "" H 6125 3350 50  0001 C CNN
+	1    6125 3350
+	1    0    0    -1  
+$EndComp
+Text Label 6575 2850 2    50   ~ 0
+DRAIN_5
+Wire Wire Line
+	6125 2850 6575 2850
+Wire Wire Line
+	6125 2900 6125 2850
+$Comp
+L mosfet:DMG9926USD Q3
+U 1 1 5FEAD244
+P 6075 3100
+F 0 "Q3" H 6200 3100 50  0000 L CNN
+F 1 "DMG9926USD" H 6215 3055 50  0001 L CNN
+F 2 "rgb_footprints:DMG9926USD_Handsolder" H 5975 2600 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 5500 3260 50  0001 C CNN
+	1    6075 3100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8125 4575 8125 550 
+Wire Notes Line
+	8175 4575 8175 550 
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 606F9F77
+P 9000 3050
+F 0 "J4" H 9000 2850 50  0000 C CNN
+F 1 "Conn_01x04" H 8918 2716 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9000 3050 50  0001 C CNN
+F 3 "~" H 9000 3050 50  0001 C CNN
+	1    9000 3050
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 60706B34
+P 8725 3325
+F 0 "#PWR0124" H 8725 3075 50  0001 C CNN
+F 1 "GND" H 8730 3152 50  0000 C CNN
+F 2 "" H 8725 3325 50  0001 C CNN
+F 3 "" H 8725 3325 50  0001 C CNN
+	1    8725 3325
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3150 8725 3150
+$Comp
+L power:+5V #PWR0125
+U 1 1 607198B6
+P 8725 2900
+F 0 "#PWR0125" H 8725 2750 50  0001 C CNN
+F 1 "+5V" H 8740 3073 50  0000 C CNN
+F 2 "" H 8725 2900 50  0001 C CNN
+F 3 "" H 8725 2900 50  0001 C CNN
+	1    8725 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8725 2900 8725 2950
+Wire Wire Line
+	8725 2950 8800 2950
+Text Label 8475 3050 0    50   ~ 0
+RESET
+Wire Wire Line
+	8475 3050 8800 3050
+Text Notes 9150 3275 2    39   Italic 0
+Programming
+Wire Wire Line
+	8725 3150 8725 3325
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 60571EC0
+P 9000 4150
+F 0 "J5" H 8950 3850 50  0000 L CNN
+F 1 "Conn_01x02" H 9080 4051 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9000 4150 50  0001 C CNN
+F 3 "~" H 9000 4150 50  0001 C CNN
+	1    9000 4150
+	1    0    0    1   
+$EndComp
+Text Notes 9100 4375 2    39   Italic 0
+TWI Slave
+Wire Wire Line
+	8725 4250 8725 4300
+Wire Wire Line
+	8800 4250 8725 4250
+$Comp
+L power:GND #PWR0127
+U 1 1 60797CEA
+P 8725 4300
+F 0 "#PWR0127" H 8725 4050 50  0001 C CNN
+F 1 "GND" H 8730 4127 50  0000 C CNN
+F 2 "" H 8725 4300 50  0001 C CNN
+F 3 "" H 8725 4300 50  0001 C CNN
+	1    8725 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8725 3950 8800 3950
+Wire Wire Line
+	8725 3900 8725 3950
+$Comp
+L power:+5V #PWR0126
+U 1 1 60791FB5
+P 8725 3900
+F 0 "#PWR0126" H 8725 3750 50  0001 C CNN
+F 1 "+5V" H 8740 4073 50  0000 C CNN
+F 2 "" H 8725 3900 50  0001 C CNN
+F 3 "" H 8725 3900 50  0001 C CNN
+	1    8725 3900
+	-1   0    0    -1  
+$EndComp
+Text Label 8475 4150 0    50   ~ 0
+TWI_SCL
+Wire Wire Line
+	8475 4150 8800 4150
+Wire Wire Line
+	8800 4050 8475 4050
+Text Label 8475 4050 0    50   ~ 0
+TWI_SDA
+Wire Notes Line
+	9400 550  9400 4575
+Wire Notes Line
+	8175 550  9400 550 
+Wire Notes Line
+	8175 4575 9400 4575
 $EndSCHEMATC

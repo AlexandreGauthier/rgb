@@ -64,7 +64,7 @@ F 1 "SW_Push" H 1650 7344 50  0001 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 1650 7350 50  0001 C CNN
 F 3 "~" H 1650 7350 50  0001 C CNN
 	1    1650 7150
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1450 7150 1350 7150
@@ -245,13 +245,13 @@ $EndComp
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5FF0425C
-P 1675 2850
-F 0 "SW1" H 1675 3000 50  0000 C CNN
-F 1 "SW_Push" H 1675 3044 50  0001 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 1675 3050 50  0001 C CNN
-F 3 "~" H 1675 3050 50  0001 C CNN
-	1    1675 2850
-	-1   0    0    -1  
+P 2000 2850
+F 0 "SW1" H 2000 3000 50  0000 C CNN
+F 1 "SW_Push" H 2000 3044 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 2000 3050 50  0001 C CNN
+F 3 "~" H 2000 3050 50  0001 C CNN
+	1    2000 2850
+	1    0    0    -1  
 $EndComp
 $Comp
 L MIC5203:MIC5203-5.0YM4-TR U2
@@ -275,10 +275,6 @@ F 3 "" H 3050 3275 50  0001 C CNN
 	1    3050 3275
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 2850 1475 2850
-Wire Wire Line
-	1875 2850 2000 2850
 Wire Wire Line
 	3050 3100 3050 3275
 Text Label 1750 3025 0    50   ~ 0
@@ -308,17 +304,6 @@ F 3 "~" H 2400 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R1
-U 1 1 5FF53AFE
-P 2100 2850
-F 0 "R1" V 1950 2850 50  0000 C CNN
-F 1 "100k" V 2025 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2100 2850 50  0001 C CNN
-F 3 "~" H 2100 2850 50  0001 C CNN
-	1    2100 2850
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+12V #PWR0103
 U 1 1 6001ACE1
 P 1400 2400
@@ -330,10 +315,10 @@ F 3 "" H 1400 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L Device:C_Small C2
 U 1 1 6004E189
 P 3550 2975
-F 0 "C3" H 3642 3021 50  0000 L CNN
+F 0 "C2" H 3642 3021 50  0000 L CNN
 F 1 "470 nF" H 3642 2930 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3550 2975 50  0001 C CNN
 F 3 "~" H 3550 2975 50  0001 C CNN
@@ -419,12 +404,8 @@ Text Label 5100 4925 2    50   ~ 0
 RESET
 Wire Wire Line
 	4575 4925 5100 4925
-Text Label 5100 5425 2    50   ~ 0
-PWM_6
 Wire Wire Line
 	4575 5425 5100 5425
-Text Label 5100 5325 2    50   ~ 0
-PWM_5
 Wire Wire Line
 	4575 5325 5100 5325
 Text Label 5100 5125 2    50   ~ 0
@@ -435,7 +416,7 @@ Text Label 5100 5025 2    50   ~ 0
 TWI_SDA
 Wire Wire Line
 	4575 5025 5100 5025
-Text Label 5100 5625 2    50   ~ 0
+Text Label 2850 6025 0    50   ~ 0
 SW5_A
 Wire Wire Line
 	4575 5625 5100 5625
@@ -443,7 +424,7 @@ Text Label 5100 5525 2    50   ~ 0
 SW4_A
 Wire Wire Line
 	4575 5525 5100 5525
-Text Label 2850 6025 0    50   ~ 0
+Text Label 5100 5625 2    50   ~ 0
 SW2_A
 Wire Wire Line
 	3375 6025 2850 6025
@@ -459,7 +440,7 @@ Text Label 5100 6125 2    50   ~ 0
 SW_B
 Wire Wire Line
 	4575 6125 5100 6125
-Text Label 5100 6025 2    50   ~ 0
+Text Label 2850 5925 0    50   ~ 0
 PWM_3
 Wire Wire Line
 	4575 6025 5100 6025
@@ -476,19 +457,15 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001913A.pdf" H 3975 5625 
 	1    3975 5625
 	1    0    0    -1  
 $EndComp
-Text Label 5100 5825 2    50   ~ 0
-PWM_1
 Wire Wire Line
 	4575 5825 5100 5825
-Text Label 5100 5925 2    50   ~ 0
-PWM_2
 Wire Wire Line
 	4575 5925 5100 5925
-Text Label 2850 5825 0    50   ~ 0
+Text Label 5100 5925 2    50   ~ 0
 PWM_7
 Wire Wire Line
 	3375 5825 2850 5825
-Text Label 2850 5925 0    50   ~ 0
+Text Label 5100 6025 2    50   ~ 0
 PWM_8
 Wire Wire Line
 	3375 5925 2850 5925
@@ -508,10 +485,10 @@ F 3 "" H 3975 6575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C4
+L Device:C_Small C3
 U 1 1 60067E8F
 P 3325 4800
-F 0 "C4" H 3100 4850 50  0000 L CNN
+F 0 "C3" H 3100 4850 50  0000 L CNN
 F 1 "100 nF" H 2925 4775 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3325 4800 50  0001 C CNN
 F 3 "~" H 3325 4800 50  0001 C CNN
@@ -1131,4 +1108,27 @@ Wire Notes Line
 	8175 550  9400 550 
 Wire Notes Line
 	8175 4575 9400 4575
+$Comp
+L Device:R_Small_US R1
+U 1 1 5FF53AFE
+P 1600 2850
+F 0 "R1" V 1450 2850 50  0000 C CNN
+F 1 "100k" V 1525 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1600 2850 50  0001 C CNN
+F 3 "~" H 1600 2850 50  0001 C CNN
+	1    1600 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 2850 1500 2850
+Wire Wire Line
+	1700 2850 1800 2850
+Text Label 5100 5425 2    50   ~ 0
+PWM_6
+Text Label 5100 5325 2    50   ~ 0
+PWM_5
+Text Label 2850 5825 0    50   ~ 0
+PWM_1
+Text Label 5100 5825 2    50   ~ 0
+PWM_2
 $EndSCHEMATC

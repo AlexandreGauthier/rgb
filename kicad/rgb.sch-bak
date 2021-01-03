@@ -320,7 +320,7 @@ U 1 1 6004E189
 P 3550 2975
 F 0 "C2" H 3642 3021 50  0000 L CNN
 F 1 "470 nF" H 3642 2930 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3550 2975 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3550 2975 50  0001 C CNN
 F 3 "~" H 3550 2975 50  0001 C CNN
 	1    3550 2975
 	1    0    0    -1  
@@ -384,7 +384,7 @@ Wire Notes Line
 Wire Notes Line
 	5350 7225 2550 7225
 Wire Notes Line
-	5350 3800 5350 7225
+	4950 3750 4950 7175
 Wire Wire Line
 	3975 4650 3975 4725
 Connection ~ 3975 4650
@@ -416,7 +416,7 @@ Text Label 5100 5025 2    50   ~ 0
 TWI_SDA
 Wire Wire Line
 	4575 5025 5100 5025
-Text Label 2850 6025 0    50   ~ 0
+Text Label 2850 6125 0    50   ~ 0
 SW5_A
 Wire Wire Line
 	4575 5625 5100 5625
@@ -427,11 +427,11 @@ Wire Wire Line
 Text Label 5100 5625 2    50   ~ 0
 SW2_A
 Wire Wire Line
-	3375 6025 2850 6025
-Text Label 2850 6125 0    50   ~ 0
+	3375 6125 2850 6125
+Text Label 2850 6025 0    50   ~ 0
 SW3_A
 Wire Wire Line
-	3375 6125 2850 6125
+	3375 6025 2850 6025
 Text Label 5100 6225 2    50   ~ 0
 SW6
 Wire Wire Line
@@ -461,11 +461,11 @@ Wire Wire Line
 	4575 5825 5100 5825
 Wire Wire Line
 	4575 5925 5100 5925
-Text Label 5100 5925 2    50   ~ 0
+Text Label 5100 6025 2    50   ~ 0
 PWM_7
 Wire Wire Line
 	3375 5825 2850 5825
-Text Label 5100 6025 2    50   ~ 0
+Text Label 5100 5925 2    50   ~ 0
 PWM_8
 Wire Wire Line
 	3375 5925 2850 5925

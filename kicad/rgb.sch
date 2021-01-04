@@ -29,9 +29,9 @@ L Device:LED D1
 U 1 1 5FEE88E5
 P 4125 2850
 F 0 "D1" V 4175 2775 50  0000 R CNN
-F 1 "LED" V 4100 2775 50  0000 R CNN
+F 1 "732-4987-2-ND" V 4100 2775 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4125 2850 50  0001 C CNN
-F 3 "~" H 4125 2850 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/150080YS75000.pdf" H 4125 2850 50  0001 C CNN
 	1    4125 2850
 	0    -1   -1   0   
 $EndComp
@@ -60,9 +60,9 @@ L Switch:SW_Push SW6
 U 1 1 6056252E
 P 1650 7150
 F 0 "SW6" H 1650 7343 50  0000 C CNN
-F 1 "SW_Push" H 1650 7344 50  0001 C CNN
+F 1 "450-1642-ND" H 1650 7344 50  0001 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 1650 7350 50  0001 C CNN
-F 3 "~" H 1650 7350 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 1650 7350 50  0001 C CNN
 	1    1650 7150
 	-1   0    0    -1  
 $EndComp
@@ -149,9 +149,9 @@ L Device:Rotary_Encoder SW5
 U 1 1 6037F069
 P 1100 6350
 F 0 "SW5" H 1330 6350 50  0000 L CNN
-F 1 "Rotary_Encoder" H 1330 6305 50  0001 L CNN
+F 1 "PEC12R-4220F-N0024" H 1330 6305 50  0001 L CNN
 F 2 "rgb_footprints:rotary encoder" H 950 6510 50  0001 C CNN
-F 3 "~" H 1100 6610 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/PEC12R.pdf" H 1100 6610 50  0001 C CNN
 	1    1100 6350
 	-1   0    0    -1  
 $EndComp
@@ -178,9 +178,9 @@ L Device:Rotary_Encoder SW4
 U 1 1 6031F78F
 P 1100 5850
 F 0 "SW4" H 1330 5850 50  0000 L CNN
-F 1 "Rotary_Encoder" H 1330 5805 50  0001 L CNN
+F 1 "PEC12R-4220F-N0024" H 1330 5805 50  0001 L CNN
 F 2 "rgb_footprints:rotary encoder" H 950 6010 50  0001 C CNN
-F 3 "~" H 1100 6110 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/PEC12R.pdf" H 1100 6110 50  0001 C CNN
 	1    1100 5850
 	-1   0    0    -1  
 $EndComp
@@ -189,9 +189,9 @@ L Device:Rotary_Encoder SW2
 U 1 1 6031C1AC
 P 1100 4800
 F 0 "SW2" H 1330 4800 50  0000 L CNN
-F 1 "Rotary_Encoder" H 1330 4755 50  0001 L CNN
+F 1 "PEC12R-4220F-N0024" H 1330 4755 50  0001 L CNN
 F 2 "rgb_footprints:rotary encoder" H 950 4960 50  0001 C CNN
-F 3 "~" H 1100 5060 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/PEC12R.pdf" H 1100 5060 50  0001 C CNN
 	1    1100 4800
 	-1   0    0    -1  
 $EndComp
@@ -200,9 +200,9 @@ L Device:Rotary_Encoder SW3
 U 1 1 603169D6
 P 1100 5325
 F 0 "SW3" H 1330 5325 50  0000 L CNN
-F 1 "Rotary_Encoder" H 1330 5280 50  0001 L CNN
+F 1 "PEC12R-4220F-N0024" H 1330 5280 50  0001 L CNN
 F 2 "rgb_footprints:rotary encoder" H 950 5485 50  0001 C CNN
-F 3 "~" H 1100 5585 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/PEC12R.pdf" H 1100 5585 50  0001 C CNN
 	1    1100 5325
 	-1   0    0    -1  
 $EndComp
@@ -247,9 +247,9 @@ L Switch:SW_Push SW1
 U 1 1 5FF0425C
 P 2075 2850
 F 0 "SW1" H 2075 3000 50  0000 C CNN
-F 1 "SW_Push" H 2075 3044 50  0001 C CNN
+F 1 "450-1642-ND" H 2075 3044 50  0001 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 2075 3050 50  0001 C CNN
-F 3 "~" H 2075 3050 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2075 3050 50  0001 C CNN
 	1    2075 2850
 	-1   0    0    -1  
 $EndComp
@@ -258,7 +258,7 @@ L MIC5203:MIC5203-5.0YM4-TR U2
 U 1 1 5FEE6BDA
 P 3125 2950
 F 0 "U2" H 3100 3544 60  0000 C CNN
-F 1 "MIC5203" H 3100 3438 60  0000 C CNN
+F 1 "576-1256-2-ND" H 3100 3438 60  0000 C CNN
 F 2 "digikey-footprints:SOT-143-4" H 4225 3190 60  0001 C CNN
 F 3 "" H 3125 2950 60  0000 C CNN
 	1    3125 2950
@@ -800,7 +800,7 @@ L Connector_Generic:Conn_01x05 J2
 U 1 1 6056847E
 P 9000 1325
 F 0 "J2" H 8950 1625 50  0000 L CNN
-F 1 "Conn_01x05" H 9080 1276 50  0001 L CNN
+F 1 "102-6164-ND" H 9080 1276 50  0001 L CNN
 F 2 "rgb_footprints:CUI_TB003-500-P05BE" H 9000 1325 50  0001 C CNN
 F 3 "~" H 9000 1325 50  0001 C CNN
 	1    9000 1325
@@ -841,7 +841,7 @@ L Connector_Generic:Conn_01x05 J3
 U 1 1 606245EA
 P 9000 2250
 F 0 "J3" H 8950 2550 50  0000 L CNN
-F 1 "Conn_01x05" H 8918 1916 50  0001 C CNN
+F 1 "102-6164-ND" H 8918 1916 50  0001 C CNN
 F 2 "rgb_footprints:CUI_TB003-500-P05BE" H 9000 2250 50  0001 C CNN
 F 3 "~" H 9000 2250 50  0001 C CNN
 	1    9000 2250
@@ -1131,134 +1131,4 @@ Text Label 2850 5825 0    50   ~ 0
 PWM_1
 Text Label 5100 5825 2    50   ~ 0
 PWM_2
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5FFF62D8
-P 6925 5150
-F 0 "TP1" V 6925 5338 50  0000 L CNN
-F 1 "TestPoint" V 6970 5338 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7125 5150 50  0001 C CNN
-F 3 "~" H 7125 5150 50  0001 C CNN
-	1    6925 5150
-	0    1    1    0   
-$EndComp
-Text Label 6300 5150 0    50   ~ 0
-PWM_1
-Wire Wire Line
-	6300 5150 6925 5150
-$Comp
-L Connector:TestPoint TP2
-U 1 1 6005165A
-P 6925 5275
-F 0 "TP2" V 6925 5463 50  0000 L CNN
-F 1 "TestPoint" V 6970 5463 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7125 5275 50  0001 C CNN
-F 3 "~" H 7125 5275 50  0001 C CNN
-	1    6925 5275
-	0    1    1    0   
-$EndComp
-Text Label 6300 5275 0    50   ~ 0
-PWM_2
-Wire Wire Line
-	6300 5275 6925 5275
-$Comp
-L Connector:TestPoint TP3
-U 1 1 60056081
-P 6925 5400
-F 0 "TP3" V 6925 5588 50  0000 L CNN
-F 1 "TestPoint" V 6970 5588 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7125 5400 50  0001 C CNN
-F 3 "~" H 7125 5400 50  0001 C CNN
-	1    6925 5400
-	0    1    1    0   
-$EndComp
-Text Label 6300 5400 0    50   ~ 0
-PWM_3
-Wire Wire Line
-	6300 5400 6925 5400
-$Comp
-L Connector:TestPoint TP4
-U 1 1 6005C178
-P 6925 5525
-F 0 "TP4" V 6925 5713 50  0000 L CNN
-F 1 "TestPoint" V 6970 5713 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7125 5525 50  0001 C CNN
-F 3 "~" H 7125 5525 50  0001 C CNN
-	1    6925 5525
-	0    1    1    0   
-$EndComp
-Text Label 6300 5525 0    50   ~ 0
-PWM_4
-Wire Wire Line
-	6300 5525 6925 5525
-$Comp
-L Connector:TestPoint TP5
-U 1 1 6005C180
-P 6925 5650
-F 0 "TP5" V 6925 5838 50  0000 L CNN
-F 1 "TestPoint" V 6970 5838 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7125 5650 50  0001 C CNN
-F 3 "~" H 7125 5650 50  0001 C CNN
-	1    6925 5650
-	0    1    1    0   
-$EndComp
-Text Label 6300 5650 0    50   ~ 0
-PWM_5
-Wire Wire Line
-	6300 5650 6925 5650
-$Comp
-L Connector:TestPoint TP6
-U 1 1 6005C188
-P 6925 5775
-F 0 "TP6" V 6925 5963 50  0000 L CNN
-F 1 "TestPoint" V 6970 5963 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7125 5775 50  0001 C CNN
-F 3 "~" H 7125 5775 50  0001 C CNN
-	1    6925 5775
-	0    1    1    0   
-$EndComp
-Text Label 6300 5775 0    50   ~ 0
-PWM_6
-Wire Wire Line
-	6300 5775 6925 5775
-$Comp
-L Connector:TestPoint TP7
-U 1 1 60061EB4
-P 6925 5900
-F 0 "TP7" V 6925 6088 50  0000 L CNN
-F 1 "TestPoint" V 6970 6088 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7125 5900 50  0001 C CNN
-F 3 "~" H 7125 5900 50  0001 C CNN
-	1    6925 5900
-	0    1    1    0   
-$EndComp
-Text Label 6300 5900 0    50   ~ 0
-PWM_7
-Wire Wire Line
-	6300 5900 6925 5900
-$Comp
-L Connector:TestPoint TP8
-U 1 1 60061EBC
-P 6925 6025
-F 0 "TP8" V 6925 6213 50  0000 L CNN
-F 1 "TestPoint" V 6970 6213 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7125 6025 50  0001 C CNN
-F 3 "~" H 7125 6025 50  0001 C CNN
-	1    6925 6025
-	0    1    1    0   
-$EndComp
-Text Label 6300 6025 0    50   ~ 0
-PWM_8
-Wire Wire Line
-	6300 6025 6925 6025
-Wire Notes Line
-	5400 4625 5400 6700
-Wire Notes Line
-	5400 6700 8125 6700
-Wire Notes Line
-	8125 6700 8125 4625
-Wire Notes Line
-	8125 4625 5400 4625
-Text Notes 5425 4750 0    59   ~ 0
-Test Points\n
 $EndSCHEMATC

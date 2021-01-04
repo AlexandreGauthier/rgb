@@ -251,7 +251,7 @@ F 1 "SW_Push" H 2000 3044 50  0001 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 2000 3050 50  0001 C CNN
 F 3 "~" H 2000 3050 50  0001 C CNN
 	1    2000 2850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L MIC5203:MIC5203-5.0YM4-TR U2

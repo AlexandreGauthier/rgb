@@ -384,7 +384,7 @@ Wire Notes Line
 Wire Notes Line
 	5350 7225 2550 7225
 Wire Notes Line
-	4950 3750 4950 7175
+	5350 3800 5350 7225
 Wire Wire Line
 	3975 4650 3975 4725
 Connection ~ 3975 4650

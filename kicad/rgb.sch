@@ -237,7 +237,7 @@ U 1 1 5FEEFC54
 P 4125 3125
 F 0 "R3" H 4193 3171 50  0000 L CNN
 F 1 "1 kΩ" H 4200 3100 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4125 3125 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4125 3125 50  0001 C CNN
 F 3 "~" H 4125 3125 50  0001 C CNN
 	1    4125 3125
 	1    0    0    -1  
@@ -298,7 +298,7 @@ U 1 1 5FF68C96
 P 2475 3250
 F 0 "R2" H 2575 3275 50  0000 C CNN
 F 1 "50k" H 2600 3200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2475 3250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2475 3250 50  0001 C CNN
 F 3 "~" H 2475 3250 50  0001 C CNN
 	1    2475 3250
 	1    0    0    -1  
@@ -524,8 +524,6 @@ Wire Wire Line
 Connection ~ 3350 1075
 Wire Wire Line
 	3125 1075 3350 1075
-Wire Wire Line
-	2475 1075 2825 1075
 $Comp
 L power:GND #PWR0105
 U 1 1 601721AC
@@ -567,28 +565,7 @@ F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-c1h-series
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2600 1175 2650 1175
-Connection ~ 2600 1175
-Wire Wire Line
-	2600 1025 2600 1175
-Wire Wire Line
 	3600 1050 3600 1075
-Wire Wire Line
-	2475 1175 2600 1175
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5FF475F8
-P 2600 1025
-F 0 "#FLG0102" H 2600 1100 50  0001 C CNN
-F 1 "PWR_FLAG" H 2600 1198 50  0001 C CNN
-F 2 "" H 2600 1025 50  0001 C CNN
-F 3 "~" H 2600 1025 50  0001 C CNN
-F 4 "Power flag for ERC" H 2600 1198 50  0001 C CNN "Description"
-	1    2600 1025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 1175 2650 1250
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5FEC47B0
@@ -602,28 +579,6 @@ F 4 "Power flag for ERC" H 3600 1223 50  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0122
-U 1 1 6058EA2C
-P 2650 1250
-F 0 "#PWR0122" H 2650 1000 50  0001 C CNN
-F 1 "GND" H 2655 1077 50  0000 C CNN
-F 2 "" H 2650 1250 50  0001 C CNN
-F 3 "" H 2650 1250 50  0001 C CNN
-	1    2650 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 6058024D
-P 2275 1075
-F 0 "J1" H 2275 1175 50  0000 C CNN
-F 1 "1935776" H 2193 841 50  0001 C CNN
-F 2 "rgb_footprints:barrel jack" H 2275 1075 50  0001 C CNN
-F 3 "https://www.phoenixcontact.com/pxc-oc-itemdetail-pdf-web/eshop?lineItemType=LineItem&UID=1935776" H 2275 1075 50  0001 C CNN
-	1    2275 1075
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR0123
 U 1 1 606245F0
 P 3650 1075
@@ -634,8 +589,6 @@ F 3 "" H 3650 1075 50  0001 C CNN
 	1    3650 1075
 	0    1    1    0   
 $EndComp
-Text Notes 2200 1300 0    39   Italic 0
-Barrel Plug
 Text Notes 575  650  0    59   ~ 0
 Power In
 Wire Notes Line
@@ -776,50 +729,6 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6825 2335 50  0001 
 	1    7400 2175
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8675 1125 8675 1075
-$Comp
-L power:+12V #PWR0112
-U 1 1 6023445A
-P 8675 1075
-F 0 "#PWR0112" H 8675 925 50  0001 C CNN
-F 1 "+12V" H 8575 1225 50  0000 L CNN
-F 2 "" H 8675 1075 50  0001 C CNN
-F 3 "" H 8675 1075 50  0001 C CNN
-	1    8675 1075
-	-1   0    0    -1  
-$EndComp
-Text Label 8475 1325 0    50   ~ 0
-DRAIN_2
-Text Label 8475 1525 0    50   ~ 0
-DRAIN_4
-Text Label 8475 1425 0    50   ~ 0
-DRAIN_3
-$Comp
-L Connector_Generic:Conn_01x05 J2
-U 1 1 6056847E
-P 9000 1325
-F 0 "J2" H 8950 1625 50  0000 L CNN
-F 1 "102-6164-ND" H 9080 1276 50  0001 L CNN
-F 2 "rgb_footprints:CUI_TB003-500-P05BE" H 9000 1325 50  0001 C CNN
-F 3 "~" H 9000 1325 50  0001 C CNN
-	1    9000 1325
-	1    0    0    -1  
-$EndComp
-Text Notes 8750 1650 0    39   Italic 0
-Channel 1
-Wire Wire Line
-	8800 1125 8675 1125
-Wire Wire Line
-	8800 1325 8475 1325
-Wire Wire Line
-	8475 1425 8800 1425
-Wire Wire Line
-	8800 1525 8475 1525
-Text Label 8475 1225 0    50   ~ 0
-DRAIN_1
-Wire Wire Line
-	8475 1225 8800 1225
 Wire Wire Line
 	8450 2450 8800 2450
 Wire Wire Line
@@ -1103,7 +1012,7 @@ Wire Wire Line
 Text Label 8475 4050 0    50   ~ 0
 TWI_SDA
 Wire Notes Line
-	9400 550  9400 4575
+	9400 625  9400 4650
 Wire Notes Line
 	8175 550  9400 550 
 Wire Notes Line
@@ -1113,8 +1022,8 @@ L Device:R_Small_US R1
 U 1 1 5FF53AFE
 P 1675 2850
 F 0 "R1" V 1525 2850 50  0000 C CNN
-F 1 "100k" V 1600 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1675 2850 50  0001 C CNN
+F 1 "110k" V 1600 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1675 2850 50  0001 C CNN
 F 3 "~" H 1675 2850 50  0001 C CNN
 	1    1675 2850
 	0    1    1    0   
@@ -1131,4 +1040,95 @@ Text Label 2850 5825 0    50   ~ 0
 PWM_1
 Text Label 5100 5825 2    50   ~ 0
 PWM_2
+Wire Wire Line
+	8475 1225 8800 1225
+Text Label 8475 1225 0    50   ~ 0
+DRAIN_1
+Wire Wire Line
+	8800 1525 8475 1525
+Wire Wire Line
+	8475 1425 8800 1425
+Wire Wire Line
+	8800 1325 8475 1325
+Wire Wire Line
+	8800 1125 8675 1125
+Text Notes 8750 1650 0    39   Italic 0
+Channel 1
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 6056847E
+P 9000 1325
+F 0 "J2" H 8950 1625 50  0000 L CNN
+F 1 "102-6164-ND" H 9080 1276 50  0001 L CNN
+F 2 "rgb_footprints:CUI_TB003-500-P05BE" H 9000 1325 50  0001 C CNN
+F 3 "~" H 9000 1325 50  0001 C CNN
+	1    9000 1325
+	1    0    0    -1  
+$EndComp
+Text Label 8475 1425 0    50   ~ 0
+DRAIN_3
+Text Label 8475 1525 0    50   ~ 0
+DRAIN_4
+Text Label 8475 1325 0    50   ~ 0
+DRAIN_2
+$Comp
+L power:+12V #PWR0112
+U 1 1 6023445A
+P 8675 1075
+F 0 "#PWR0112" H 8675 925 50  0001 C CNN
+F 1 "+12V" H 8575 1225 50  0000 L CNN
+F 2 "" H 8675 1075 50  0001 C CNN
+F 3 "" H 8675 1075 50  0001 C CNN
+	1    8675 1075
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8675 1125 8675 1075
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FF475F8
+P 2600 1025
+F 0 "#FLG0102" H 2600 1100 50  0001 C CNN
+F 1 "PWR_FLAG" H 2600 1198 50  0001 C CNN
+F 2 "" H 2600 1025 50  0001 C CNN
+F 3 "~" H 2600 1025 50  0001 C CNN
+F 4 "Power flag for ERC" H 2600 1198 50  0001 C CNN "Description"
+	1    2600 1025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 6058EA2C
+P 2650 1250
+F 0 "#PWR0122" H 2650 1000 50  0001 C CNN
+F 1 "GND" H 2655 1077 50  0000 C CNN
+F 2 "" H 2650 1250 50  0001 C CNN
+F 3 "" H 2650 1250 50  0001 C CNN
+	1    2650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1175 2650 1250
+Wire Wire Line
+	2475 1175 2600 1175
+Wire Wire Line
+	2600 1025 2600 1175
+Connection ~ 2600 1175
+Wire Wire Line
+	2600 1175 2650 1175
+Wire Wire Line
+	2475 1075 2825 1075
+Text Notes 2125 1300 0    39   Italic 0
+Screw Terminal\n
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 6058024D
+P 2275 1075
+F 0 "J1" H 2275 1175 50  0000 C CNN
+F 1 "1935776" H 2193 841 50  0001 C CNN
+F 2 "rgb_footprints:CUI_TB001-500-02BE" H 2275 1075 50  0001 C CNN
+F 3 "https://www.phoenixcontact.com/pxc-oc-itemdetail-pdf-web/eshop?lineItemType=LineItem&UID=1935776" H 2275 1075 50  0001 C CNN
+	1    2275 1075
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

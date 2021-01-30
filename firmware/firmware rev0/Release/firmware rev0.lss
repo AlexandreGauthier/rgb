@@ -1,0 +1,165 @@
+
+firmware rev0.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00803f00  00803f00  0000013e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000000ea  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000013e  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000170  2**2
+                  CONTENTS, READONLY
+  4 .debug_info   000016bc  00000000  00000000  000001ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00001582  00000000  00000000  00001868  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000136  00000000  00000000  00002dea  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    000009a7  00000000  00000000  00002f20  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	19 c0       	rjmp	.+50     	; 0x34 <__ctors_end>
+   2:	20 c0       	rjmp	.+64     	; 0x44 <__bad_interrupt>
+   4:	1f c0       	rjmp	.+62     	; 0x44 <__bad_interrupt>
+   6:	65 c0       	rjmp	.+202    	; 0xd2 <__vector_3>
+   8:	5a c0       	rjmp	.+180    	; 0xbe <__vector_4>
+   a:	4f c0       	rjmp	.+158    	; 0xaa <__vector_5>
+   c:	1b c0       	rjmp	.+54     	; 0x44 <__bad_interrupt>
+   e:	1a c0       	rjmp	.+52     	; 0x44 <__bad_interrupt>
+  10:	19 c0       	rjmp	.+50     	; 0x44 <__bad_interrupt>
+  12:	18 c0       	rjmp	.+48     	; 0x44 <__bad_interrupt>
+  14:	17 c0       	rjmp	.+46     	; 0x44 <__bad_interrupt>
+  16:	16 c0       	rjmp	.+44     	; 0x44 <__bad_interrupt>
+  18:	15 c0       	rjmp	.+42     	; 0x44 <__bad_interrupt>
+  1a:	14 c0       	rjmp	.+40     	; 0x44 <__bad_interrupt>
+  1c:	13 c0       	rjmp	.+38     	; 0x44 <__bad_interrupt>
+  1e:	12 c0       	rjmp	.+36     	; 0x44 <__bad_interrupt>
+  20:	11 c0       	rjmp	.+34     	; 0x44 <__bad_interrupt>
+  22:	10 c0       	rjmp	.+32     	; 0x44 <__bad_interrupt>
+  24:	0f c0       	rjmp	.+30     	; 0x44 <__bad_interrupt>
+  26:	0e c0       	rjmp	.+28     	; 0x44 <__bad_interrupt>
+  28:	0d c0       	rjmp	.+26     	; 0x44 <__bad_interrupt>
+  2a:	0c c0       	rjmp	.+24     	; 0x44 <__bad_interrupt>
+  2c:	0b c0       	rjmp	.+22     	; 0x44 <__bad_interrupt>
+  2e:	0a c0       	rjmp	.+20     	; 0x44 <__bad_interrupt>
+  30:	09 c0       	rjmp	.+18     	; 0x44 <__bad_interrupt>
+  32:	08 c0       	rjmp	.+16     	; 0x44 <__bad_interrupt>
+
+00000034 <__ctors_end>:
+  34:	11 24       	eor	r1, r1
+  36:	1f be       	out	0x3f, r1	; 63
+  38:	cf ef       	ldi	r28, 0xFF	; 255
+  3a:	cd bf       	out	0x3d, r28	; 61
+  3c:	df e3       	ldi	r29, 0x3F	; 63
+  3e:	de bf       	out	0x3e, r29	; 62
+  40:	32 d0       	rcall	.+100    	; 0xa6 <main>
+  42:	51 c0       	rjmp	.+162    	; 0xe6 <_exit>
+
+00000044 <__bad_interrupt>:
+  44:	dd cf       	rjmp	.-70     	; 0x0 <__vectors>
+
+00000046 <_Z9debugMainv>:
+  46:	91 e0       	ldi	r25, 0x01	; 1
+  48:	80 e0       	ldi	r24, 0x00	; 0
+  4a:	88 9f       	mul	r24, r24
+  4c:	20 2d       	mov	r18, r0
+  4e:	11 24       	eor	r1, r1
+  50:	20 93 2c 0a 	sts	0x0A2C, r18	; 0x800a2c <__RODATA_PM_OFFSET__+0x7f8a2c>
+  54:	8f 3f       	cpi	r24, 0xFF	; 255
+  56:	21 f0       	breq	.+8      	; 0x60 <_Z9debugMainv+0x1a>
+  58:	81 11       	cpse	r24, r1
+  5a:	03 c0       	rjmp	.+6      	; 0x62 <_Z9debugMainv+0x1c>
+  5c:	91 e0       	ldi	r25, 0x01	; 1
+  5e:	01 c0       	rjmp	.+2      	; 0x62 <_Z9debugMainv+0x1c>
+  60:	9f ef       	ldi	r25, 0xFF	; 255
+  62:	89 0f       	add	r24, r25
+  64:	e9 e3       	ldi	r30, 0x39	; 57
+  66:	f0 e2       	ldi	r31, 0x20	; 32
+  68:	31 97       	sbiw	r30, 0x01	; 1
+  6a:	f1 f7       	brne	.-4      	; 0x68 <_Z9debugMainv+0x22>
+  6c:	00 c0       	rjmp	.+0      	; 0x6e <_Z9debugMainv+0x28>
+  6e:	00 00       	nop
+  70:	ec cf       	rjmp	.-40     	; 0x4a <_Z9debugMainv+0x4>
+
+00000072 <_Z9setupGPIOv>:
+  72:	e0 e2       	ldi	r30, 0x20	; 32
+  74:	f4 e0       	ldi	r31, 0x04	; 4
+  76:	80 e2       	ldi	r24, 0x20	; 32
+  78:	85 83       	std	Z+5, r24	; 0x05
+  7a:	81 83       	std	Z+1, r24	; 0x01
+  7c:	08 95       	ret
+
+0000007e <_Z8setupTCAv>:
+  7e:	e0 e0       	ldi	r30, 0x00	; 0
+  80:	fa e0       	ldi	r31, 0x0A	; 10
+  82:	83 81       	ldd	r24, Z+3	; 0x03
+  84:	81 60       	ori	r24, 0x01	; 1
+  86:	83 83       	std	Z+3, r24	; 0x03
+  88:	8f ef       	ldi	r24, 0xFF	; 255
+  8a:	87 a3       	std	Z+39, r24	; 0x27
+  8c:	86 a3       	std	Z+38, r24	; 0x26
+  8e:	80 81       	ld	r24, Z
+  90:	84 60       	ori	r24, 0x04	; 4
+  92:	80 83       	st	Z, r24
+  94:	80 81       	ld	r24, Z
+  96:	81 60       	ori	r24, 0x01	; 1
+  98:	80 83       	st	Z, r24
+  9a:	81 81       	ldd	r24, Z+1	; 0x01
+  9c:	87 67       	ori	r24, 0x77	; 119
+  9e:	81 83       	std	Z+1, r24	; 0x01
+  a0:	08 95       	ret
+
+000000a2 <_Z16setupPeripheralsv>:
+  a2:	e7 df       	rcall	.-50     	; 0x72 <_Z9setupGPIOv>
+  a4:	ec cf       	rjmp	.-40     	; 0x7e <_Z8setupTCAv>
+
+000000a6 <main>:
+  a6:	fd df       	rcall	.-6      	; 0xa2 <_Z16setupPeripheralsv>
+  a8:	ce df       	rcall	.-100    	; 0x46 <_Z9debugMainv>
+
+000000aa <__vector_5>:
+  aa:	1f 92       	push	r1
+  ac:	0f 92       	push	r0
+  ae:	0f b6       	in	r0, 0x3f	; 63
+  b0:	0f 92       	push	r0
+  b2:	11 24       	eor	r1, r1
+  b4:	0f 90       	pop	r0
+  b6:	0f be       	out	0x3f, r0	; 63
+  b8:	0f 90       	pop	r0
+  ba:	1f 90       	pop	r1
+  bc:	18 95       	reti
+
+000000be <__vector_4>:
+  be:	1f 92       	push	r1
+  c0:	0f 92       	push	r0
+  c2:	0f b6       	in	r0, 0x3f	; 63
+  c4:	0f 92       	push	r0
+  c6:	11 24       	eor	r1, r1
+  c8:	0f 90       	pop	r0
+  ca:	0f be       	out	0x3f, r0	; 63
+  cc:	0f 90       	pop	r0
+  ce:	1f 90       	pop	r1
+  d0:	18 95       	reti
+
+000000d2 <__vector_3>:
+  d2:	1f 92       	push	r1
+  d4:	0f 92       	push	r0
+  d6:	0f b6       	in	r0, 0x3f	; 63
+  d8:	0f 92       	push	r0
+  da:	11 24       	eor	r1, r1
+  dc:	0f 90       	pop	r0
+  de:	0f be       	out	0x3f, r0	; 63
+  e0:	0f 90       	pop	r0
+  e2:	1f 90       	pop	r1
+  e4:	18 95       	reti
+
+000000e6 <_exit>:
+  e6:	f8 94       	cli
+
+000000e8 <__stop_program>:
+  e8:	ff cf       	rjmp	.-2      	; 0xe8 <__stop_program>

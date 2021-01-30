@@ -1,0 +1,119 @@
+
+firmware rev0.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00803f00  00803f00  000000c2  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000006e  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000000c2  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000000f4  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  00000130  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000195d  00000000  00000000  00000150  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000169a  00000000  00000000  00001aad  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002ab  00000000  00000000  00003147  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000024  00000000  00000000  000033f4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000c16  00000000  00000000  00003418  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000048  00000000  00000000  0000402e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000010  00000000  00000000  00004076  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	19 c0       	rjmp	.+50     	; 0x34 <__ctors_end>
+   2:	20 c0       	rjmp	.+64     	; 0x44 <__bad_interrupt>
+   4:	1f c0       	rjmp	.+62     	; 0x44 <__bad_interrupt>
+   6:	1e c0       	rjmp	.+60     	; 0x44 <__bad_interrupt>
+   8:	1d c0       	rjmp	.+58     	; 0x44 <__bad_interrupt>
+   a:	1c c0       	rjmp	.+56     	; 0x44 <__bad_interrupt>
+   c:	1b c0       	rjmp	.+54     	; 0x44 <__bad_interrupt>
+   e:	1a c0       	rjmp	.+52     	; 0x44 <__bad_interrupt>
+  10:	19 c0       	rjmp	.+50     	; 0x44 <__bad_interrupt>
+  12:	18 c0       	rjmp	.+48     	; 0x44 <__bad_interrupt>
+  14:	17 c0       	rjmp	.+46     	; 0x44 <__bad_interrupt>
+  16:	16 c0       	rjmp	.+44     	; 0x44 <__bad_interrupt>
+  18:	15 c0       	rjmp	.+42     	; 0x44 <__bad_interrupt>
+  1a:	14 c0       	rjmp	.+40     	; 0x44 <__bad_interrupt>
+  1c:	13 c0       	rjmp	.+38     	; 0x44 <__bad_interrupt>
+  1e:	12 c0       	rjmp	.+36     	; 0x44 <__bad_interrupt>
+  20:	11 c0       	rjmp	.+34     	; 0x44 <__bad_interrupt>
+  22:	10 c0       	rjmp	.+32     	; 0x44 <__bad_interrupt>
+  24:	0f c0       	rjmp	.+30     	; 0x44 <__bad_interrupt>
+  26:	0e c0       	rjmp	.+28     	; 0x44 <__bad_interrupt>
+  28:	0d c0       	rjmp	.+26     	; 0x44 <__bad_interrupt>
+  2a:	0c c0       	rjmp	.+24     	; 0x44 <__bad_interrupt>
+  2c:	0b c0       	rjmp	.+22     	; 0x44 <__bad_interrupt>
+  2e:	0a c0       	rjmp	.+20     	; 0x44 <__bad_interrupt>
+  30:	09 c0       	rjmp	.+18     	; 0x44 <__bad_interrupt>
+  32:	08 c0       	rjmp	.+16     	; 0x44 <__bad_interrupt>
+
+00000034 <__ctors_end>:
+  34:	11 24       	eor	r1, r1
+  36:	1f be       	out	0x3f, r1	; 63
+  38:	cf ef       	ldi	r28, 0xFF	; 255
+  3a:	cd bf       	out	0x3d, r28	; 61
+  3c:	df e3       	ldi	r29, 0x3F	; 63
+  3e:	de bf       	out	0x3e, r29	; 62
+  40:	02 d0       	rcall	.+4      	; 0x46 <main>
+  42:	13 c0       	rjmp	.+38     	; 0x6a <_exit>
+
+00000044 <__bad_interrupt>:
+  44:	dd cf       	rjmp	.-70     	; 0x0 <__vectors>
+
+00000046 <main>:
+
+#define PIN_POWER_EN_MASK (1 << 5) // PB5
+
+int main()
+{
+	PORTB.OUTSET = PIN_POWER_EN_MASK;
+  46:	e0 e2       	ldi	r30, 0x20	; 32
+  48:	f4 e0       	ldi	r31, 0x04	; 4
+  4a:	80 e2       	ldi	r24, 0x20	; 32
+  4c:	85 83       	std	Z+5, r24	; 0x05
+	PORTB.DIRSET = PIN_POWER_EN_MASK;
+  4e:	81 83       	std	Z+1, r24	; 0x01
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  50:	2f e7       	ldi	r18, 0x7F	; 127
+  52:	3a e1       	ldi	r19, 0x1A	; 26
+  54:	96 e0       	ldi	r25, 0x06	; 6
+  56:	21 50       	subi	r18, 0x01	; 1
+  58:	30 40       	sbci	r19, 0x00	; 0
+  5a:	90 40       	sbci	r25, 0x00	; 0
+  5c:	e1 f7       	brne	.-8      	; 0x56 <main+0x10>
+  5e:	00 c0       	rjmp	.+0      	; 0x60 <main+0x1a>
+  60:	00 00       	nop
+
+	
+	//PORTB.PIN2CTRL |= PORT_PULLUPEN_bm; // Enable pull up
+	_delay_ms(2000);
+	PORTB.DIRCLR = PIN_POWER_EN_MASK;
+  62:	82 83       	std	Z+2, r24	; 0x02
+
+	//PORTB.PIN2CTRL &= ~PORT_PULLUPEN_bm; // Disable pull up
+}
+  64:	80 e0       	ldi	r24, 0x00	; 0
+  66:	90 e0       	ldi	r25, 0x00	; 0
+  68:	08 95       	ret
+
+0000006a <_exit>:
+  6a:	f8 94       	cli
+
+0000006c <__stop_program>:
+  6c:	ff cf       	rjmp	.-2      	; 0x6c <__stop_program>

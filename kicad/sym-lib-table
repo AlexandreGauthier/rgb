@@ -2,4 +2,5 @@
   (lib (name mosfet)(type Legacy)(uri ${KIPRJMOD}/libraries/mosfet.lib)(options "")(descr ""))
   (lib (name ATTINY416)(type Legacy)(uri D:/Documents/rgb/kicad/libraries/ATTINY416.lib)(options "")(descr ""))
   (lib (name MIC5203)(type Legacy)(uri ${KIPRJMOD}/libraries/MIC5203.lib)(options "")(descr ""))
+  (lib (name rgb-rescue)(type Legacy)(uri ${KIPRJMOD}/rgb-rescue.lib)(options "")(descr ""))
 )

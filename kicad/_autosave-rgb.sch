@@ -484,7 +484,7 @@ U 1 1 606F9F77
 P 9805 4403
 F 0 "J4" H 9805 4303 50  0000 C CNN
 F 1 "Conn_01x04" H 9723 4069 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9805 4403 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9805 4403 50  0001 C CNN
 F 3 "~" H 9805 4403 50  0001 C CNN
 	1    9805 4403
 	1    0    0    1   
@@ -802,13 +802,13 @@ Text Label 5855 5753 0    50   ~ 0
 PWM_7
 $Comp
 L mosfet:DMG9926USD Q2
-U 1 1 5FE90B41
+U 2 1 5FE90B41
 P 6655 2803
 F 0 "Q2" H 6780 2803 50  0000 L CNN
 F 1 "DMG9926USD" H 6795 2758 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 6555 2303 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 6080 2963 50  0001 C CNN
-	1    6655 2803
+	2    6655 2803
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1002,13 +1002,13 @@ Wire Wire Line
 	7705 3803 7855 3803
 $Comp
 L mosfet:DMG9926USD Q2
-U 2 1 60225873
+U 1 1 60225873
 P 8105 2803
 F 0 "Q2" H 8230 2803 50  0000 L CNN
 F 1 "DMG9926USD" H 8245 2758 50  0001 L CNN
 F 2 "rgb_footprints:DMG9926USD_Handsolder" H 8005 2303 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31757.pdf" H 7530 2963 50  0001 C CNN
-	2    8105 2803
+	1    8105 2803
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1321,7 +1321,7 @@ F 1 "450-1642-ND" H 7300 1494 50  0001 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 7300 1500 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 7300 1500 50  0001 C CNN
 	1    7300 1300
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R3
@@ -1416,10 +1416,10 @@ Wire Wire Line
 Wire Wire Line
 	1700 950  2050 950 
 $Comp
-L power:PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG0101
 U 1 1 6099FCA9
 P 1750 850
-F 0 "#FLG?" H 1750 925 50  0001 C CNN
+F 0 "#FLG0101" H 1750 925 50  0001 C CNN
 F 1 "PWR_FLAG" H 1750 1023 50  0001 C CNN
 F 2 "" H 1750 850 50  0001 C CNN
 F 3 "~" H 1750 850 50  0001 C CNN

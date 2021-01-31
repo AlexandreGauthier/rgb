@@ -1,4 +1,4 @@
-9657668162567
+11284194525883
 rgb_footprints
 ATTINY416-SNR
 
@@ -34,6 +34,13 @@ MIC5203-3.3YM4-TR
 0
 4
 4
+rgb_footprints
+Si4101DY
+
+
+0
+8
+3
 rgb_footprints
 rotary encoder
 
